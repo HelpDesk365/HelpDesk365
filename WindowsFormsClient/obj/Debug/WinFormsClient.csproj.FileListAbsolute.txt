@@ -1,0 +1,29 @@
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\WinFormsClient.exe.config
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.WinFormsClient.resources
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.Properties.Resources.resources
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.csproj.GenerateResource.Cache
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\WinFormsClient.exe
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\WinFormsClient.pdb
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.exe
+C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.pdb
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.WinFormsClient.resources
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.Properties.Resources.resources
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\WinFormsClient.exe.config
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\WinFormsClient.exe
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\WinFormsClient.pdb
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.exe
+C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WindowsFormsClient\obj\Debug\WinFormsClient.pdb
+E:\OpenSource\HelpDesk365\WindowsFormsClient\bin\Debug\WinFormsClient.exe.config
+E:\OpenSource\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.exe
+E:\OpenSource\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.pdb
