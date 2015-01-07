@@ -57,6 +57,10 @@
                 }
             };
 
+            chat.client.changeGroupName = function (groupName) {
+                group = groupName;
+            }
+
             // Get the user name and store it to prepend to messages.
             $('#displayname').val(prompt('Enter your name:', ''));
             // Set initial focus to message input box.

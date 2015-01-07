@@ -134,6 +134,12 @@ namespace SignalRChat
         public static List<Group> groupList = new List<Group>();
         public void Send(string name, string message,string groupName)
         {
+            if (String.IsNullOrEmpty(groupName))
+            {
+                var group = groupList.FirstOrDefault(d => d.ClientId == Context.ConnectionId);
+                groupName = group.Name;
+            }
+
             Clients.Group(groupName).addMessage(name, message);
         }
         public override Task OnConnected()
@@ -170,6 +176,36 @@ namespace SignalRChat
             Clients.Group(groupName).joinMessage(name, String.Format("Join : {0}", name));
         }
 
+        public void GetGroupList()
+        {
+            Clients.Caller.getGroupList(groupList.Select(d => d.Name).ToList());
+        }
+
+        public void SessionTransfer(string source, string target)
+        {
+            var sourceGroup = groupList.FirstOrDefault(d => d.Name == source);
+            var clientId = String.Empty;
+            if (sourceGroup != null)
+            {
+                var targetGroup = groupList.FirstOrDefault(d => d.Name == target);
+
+                clientId = sourceGroup.ClientId;
+                Groups.Remove(sourceGroup.ClientId, source);
+                Groups.Add(sourceGroup.ClientId, target);
+                Join(sourceGroup.ClientName, target);
+
+                if (targetGroup != null)
+                {
+                    targetGroup.IsAvailable = false;
+                    targetGroup.ClientId = clientId;
+                    targetGroup.ClientName = sourceGroup.ClientName;
+                }
+                sourceGroup.IsAvailable = true;
+                sourceGroup.ClientId = String.Empty;
+                sourceGroup.ClientName = String.Empty;
+            }
+            Clients.Clients(new string[] { clientId }).changeGroupName(target);
+        }
         public void FindGroup(string name)
         {
             var group = groupList.Where(d => d.IsAvailable).FirstOrDefault();
@@ -179,7 +215,7 @@ namespace SignalRChat
                 group.ClientId = Context.ConnectionId;
                 group.ClientName = name;
                 Groups.Add(Context.ConnectionId, group.Name);
-                Join(name,group.Name);
+                
             }
             Clients.Caller.findedGroup(group == null ? "" : group.Name);
         }

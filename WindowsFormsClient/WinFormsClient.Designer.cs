@@ -34,6 +34,8 @@
             this.TextBoxMessage = new System.Windows.Forms.TextBox();
             this.RichTextBoxConsole = new System.Windows.Forms.RichTextBox();
             this.ChatPanel = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnSessionTranser = new System.Windows.Forms.Button();
             this.SignInPanel = new System.Windows.Forms.Panel();
             this.StatusText = new System.Windows.Forms.Label();
             this.SignInButton = new System.Windows.Forms.Button();
@@ -47,7 +49,7 @@
             // ButtonSend
             // 
             this.ButtonSend.Enabled = false;
-            this.ButtonSend.Location = new System.Drawing.Point(483, 9);
+            this.ButtonSend.Location = new System.Drawing.Point(311, 10);
             this.ButtonSend.Name = "ButtonSend";
             this.ButtonSend.Size = new System.Drawing.Size(87, 21);
             this.ButtonSend.TabIndex = 1;
@@ -59,30 +61,54 @@
             // 
             this.TextBoxMessage.Location = new System.Drawing.Point(9, 11);
             this.TextBoxMessage.Name = "TextBoxMessage";
-            this.TextBoxMessage.Size = new System.Drawing.Size(466, 21);
+            this.TextBoxMessage.Size = new System.Drawing.Size(296, 21);
             this.TextBoxMessage.TabIndex = 2;
             // 
             // RichTextBoxConsole
             // 
-            this.RichTextBoxConsole.Location = new System.Drawing.Point(9, 35);
+            this.RichTextBoxConsole.Location = new System.Drawing.Point(9, 69);
             this.RichTextBoxConsole.Name = "RichTextBoxConsole";
             this.RichTextBoxConsole.ReadOnly = true;
-            this.RichTextBoxConsole.Size = new System.Drawing.Size(560, 426);
+            this.RichTextBoxConsole.Size = new System.Drawing.Size(600, 393);
             this.RichTextBoxConsole.TabIndex = 3;
             this.RichTextBoxConsole.Text = "";
             this.RichTextBoxConsole.Resize += new System.EventHandler(this.Form_Resize);
             // 
             // ChatPanel
             // 
+            this.ChatPanel.Controls.Add(this.comboBox1);
+            this.ChatPanel.Controls.Add(this.btnSessionTranser);
             this.ChatPanel.Controls.Add(this.RichTextBoxConsole);
             this.ChatPanel.Controls.Add(this.TextBoxMessage);
             this.ChatPanel.Controls.Add(this.ButtonSend);
             this.ChatPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChatPanel.Location = new System.Drawing.Point(0, 0);
             this.ChatPanel.Name = "ChatPanel";
-            this.ChatPanel.Size = new System.Drawing.Size(584, 474);
+            this.ChatPanel.Size = new System.Drawing.Size(621, 474);
             this.ChatPanel.TabIndex = 4;
             this.ChatPanel.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(8, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 20);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
+            this.comboBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBox1_MouseClick);
+            this.comboBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.comboBox1_MouseDoubleClick);
+            // 
+            // btnSessionTranser
+            // 
+            this.btnSessionTranser.Location = new System.Drawing.Point(135, 37);
+            this.btnSessionTranser.Name = "btnSessionTranser";
+            this.btnSessionTranser.Size = new System.Drawing.Size(126, 21);
+            this.btnSessionTranser.TabIndex = 4;
+            this.btnSessionTranser.Text = "Session Transfer";
+            this.btnSessionTranser.UseVisualStyleBackColor = true;
+            this.btnSessionTranser.Click += new System.EventHandler(this.btnSessionTransfer_Click);
             // 
             // SignInPanel
             // 
@@ -93,7 +119,7 @@
             this.SignInPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SignInPanel.Location = new System.Drawing.Point(0, 0);
             this.SignInPanel.Name = "SignInPanel";
-            this.SignInPanel.Size = new System.Drawing.Size(584, 474);
+            this.SignInPanel.Size = new System.Drawing.Size(621, 474);
             this.SignInPanel.TabIndex = 4;
             // 
             // StatusText
@@ -143,7 +169,7 @@
             this.AcceptButton = this.ButtonSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 474);
+            this.ClientSize = new System.Drawing.Size(621, 474);
             this.Controls.Add(this.ChatPanel);
             this.Controls.Add(this.SignInPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -173,6 +199,8 @@
         private System.Windows.Forms.TextBox UserNameTextBox;
         private System.Windows.Forms.Label StatusText;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Button btnSessionTranser;
+        private System.Windows.Forms.ComboBox comboBox1;
 
     }
 }

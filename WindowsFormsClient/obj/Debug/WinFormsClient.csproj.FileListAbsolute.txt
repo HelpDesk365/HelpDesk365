@@ -27,3 +27,15 @@ C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and 
 E:\OpenSource\HelpDesk365\WindowsFormsClient\bin\Debug\WinFormsClient.exe.config
 E:\OpenSource\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.exe
 E:\OpenSource\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Debug\WinFormsClient.exe.config
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.exe
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Debug\WinFormsClient.exe
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Debug\WinFormsClient.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Debug\Newtonsoft.Json.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Debug\Newtonsoft.Json.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.WinFormsClient.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.Properties.Resources.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.csproj.GenerateResource.Cache

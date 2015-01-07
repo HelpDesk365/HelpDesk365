@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.SignalR.Client;
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Windows.Forms;
 
@@ -84,6 +85,15 @@ namespace WinFormsClient
                }
                ))
            );
+
+            HubProxy.On<List<string>>("GetGroupList", (data) =>
+
+               this.Invoke((Action)(() =>
+               {
+                   comboBox1.DataSource = data;                 
+               }
+               ))
+           );
             
 
             try
@@ -152,6 +162,35 @@ namespace WinFormsClient
         {
             this.Show();
             this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnSessionTransfer_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem == null)
+            {
+                MessageBox.Show("상담사 아이디를 선택해 주세요.");
+            }
+            HubProxy.Invoke("SessionTransfer", UserName, comboBox1.SelectedItem.ToString());
+        }
+
+        private void comboBox1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            HubProxy.Invoke("GetGroupList");
+        }
+
+        private void comboBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_Click(object sender, EventArgs e)
+        {
+            HubProxy.Invoke("GetGroupList");
         }
     }
 }
