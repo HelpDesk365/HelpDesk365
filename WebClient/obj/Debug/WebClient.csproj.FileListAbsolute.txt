@@ -8,3 +8,8 @@ C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and 
 C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WebClient\obj\Debug\WebClient.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WebClient\obj\Debug\WebClient.dll
 C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WebClient\obj\Debug\WebClient.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\bin\WebClient.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\bin\WebClient.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\obj\Debug\WebClient.csprojResolveAssemblyReference.cache
+E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\obj\Debug\WebClient.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\obj\Debug\WebClient.pdb

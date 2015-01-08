@@ -88,7 +88,7 @@ namespace SignalRChat
 
         private void WinFormsServer_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+
             if (SignalR != null)
             {
                 SignalR.Dispose();
@@ -108,8 +108,8 @@ namespace SignalRChat
                 // You can enable JSONP by uncommenting line below.
                 // JSONP requests are insecure but some older browsers (and some
                 // versions of IE) require JSONP to work cross domain
-                 EnableJSONP = true
-                 
+                EnableJSONP = true
+
             };
 
             app.MapSignalR(hubConfiguration);
@@ -120,9 +120,14 @@ namespace SignalRChat
         public string Name { get; set; }
         public int MaxMember { get { return 2; } }
         public bool IsAvailable { get; set; }
+        public List<Client> Clients { get; set; }
+        public string AgentId { get; set; }
+    }
+
+    public class Client
+    {
         public string ClientId { get; set; }
         public string ClientName { get; set; }
-        public string GroupId { get; set; }
     }
     /// <summary>
     /// Echoes messages sent using the Send message by calling the
@@ -132,11 +137,11 @@ namespace SignalRChat
     public class MyHub : Hub
     {
         public static List<Group> groupList = new List<Group>();
-        public void Send(string name, string message,string groupName)
+        public void Send(string name, string message, string groupName)
         {
             if (String.IsNullOrEmpty(groupName))
             {
-                var group = groupList.FirstOrDefault(d => d.ClientId == Context.ConnectionId);
+                var group = groupList.FirstOrDefault(d => d.Clients.Count(o => o.ClientId == Context.ConnectionId) > 0);
                 groupName = group.Name;
             }
 
@@ -149,22 +154,24 @@ namespace SignalRChat
         }
         public override Task OnDisconnected()
         {
-            var client = groupList.Where(d => d.ClientId == Context.ConnectionId).FirstOrDefault();
-            var agent = groupList.Where(d => d.GroupId == Context.ConnectionId).FirstOrDefault();
+            var client = groupList.FirstOrDefault(d => d.Clients.Count(o => o.ClientId == Context.ConnectionId) > 0);
+            var agent = groupList.FirstOrDefault(d => d.AgentId == Context.ConnectionId);
 
             if (client != null)
             {
                 client.IsAvailable = true;
-                client.ClientId = String.Empty;
+                if (client.Clients.Count > 0)
+                {
+                    client.Clients.RemoveAt(0);
+                    LeaveGroup(client.Clients[0].ClientName, client.Name);
+                }
                 Groups.Remove(Context.ConnectionId, client.Name);
-                LeaveGroup(client.ClientName,client.Name);
-
             }
 
             if (agent != null)
             {
                 groupList.Remove(agent);
-                Groups.Remove(Context.ConnectionId,agent.Name);
+                Groups.Remove(Context.ConnectionId, agent.Name);
             }
 
             Program.MainForm.WriteToConsole("Client disconnected: " + Context.ConnectionId);
@@ -188,21 +195,23 @@ namespace SignalRChat
             if (sourceGroup != null)
             {
                 var targetGroup = groupList.FirstOrDefault(d => d.Name == target);
-
-                clientId = sourceGroup.ClientId;
-                Groups.Remove(sourceGroup.ClientId, source);
-                Groups.Add(sourceGroup.ClientId, target);
-                Join(sourceGroup.ClientName, target);
+                Client client = sourceGroup.Clients.FirstOrDefault();
+                if (client == null)
+                {
+                    return;
+                }
+                clientId = client.ClientId;
+                Groups.Remove(clientId, source);
+                Groups.Add(clientId, target);
+                Join(client.ClientName, target);
 
                 if (targetGroup != null)
                 {
                     targetGroup.IsAvailable = false;
-                    targetGroup.ClientId = clientId;
-                    targetGroup.ClientName = sourceGroup.ClientName;
+                    targetGroup.Clients.Add(client);
                 }
                 sourceGroup.IsAvailable = true;
-                sourceGroup.ClientId = String.Empty;
-                sourceGroup.ClientName = String.Empty;
+                sourceGroup.Clients.Remove(client);
             }
             Clients.Clients(new string[] { clientId }).changeGroupName(target);
         }
@@ -212,10 +221,12 @@ namespace SignalRChat
             if (group != null)
             {
                 group.IsAvailable = false;
-                group.ClientId = Context.ConnectionId;
-                group.ClientName = name;
+                group.Clients.Add(new Client
+                {
+                    ClientId = Context.ConnectionId,
+                    ClientName = name
+                });
                 Groups.Add(Context.ConnectionId, group.Name);
-                
             }
             Clients.Caller.findedGroup(group == null ? "" : group.Name);
         }
@@ -225,22 +236,23 @@ namespace SignalRChat
             var group = groupList.Where(d => d.Name.Equals(groupName, StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
             if (group == null)
             {
-                groupList.Add(new Group() { 
-                 IsAvailable =true,
-                  Name = groupName,
-                  ClientId = String.Empty,
-                 GroupId = Context.ConnectionId
+                groupList.Add(new Group()
+                {
+                    IsAvailable = true,
+                    Name = groupName,
+                    Clients = new List<Client>(),
+                    AgentId = Context.ConnectionId
                 });
-               
+
             }
             return Groups.Add(Context.ConnectionId, groupName);
 
         }
 
-        public void LeaveGroup(string name,string groupName)
+        public void LeaveGroup(string name, string groupName)
         {
             Clients.Group(groupName).leaveMessage(name);
         }
-       
+
     }
 }

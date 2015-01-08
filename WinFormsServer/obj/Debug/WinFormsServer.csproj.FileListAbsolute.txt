@@ -78,3 +78,4 @@ E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\bin\Debug\Newtonsoft.Json.x
 E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.Properties.Resources.resources
 E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.WinFormsServer.resources
 E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Debug\WinFormsServer.csproj.GenerateResource.Cache
+E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Debug\WinFormsServer.csprojResolveAssemblyReference.cache
