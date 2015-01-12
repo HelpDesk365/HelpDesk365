@@ -39,3 +39,4 @@ E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Debug\Newtonsoft.Js
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.WinFormsClient.resources
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.Properties.Resources.resources
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.csproj.GenerateResource.Cache
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.csprojResolveAssemblyReference.cache
