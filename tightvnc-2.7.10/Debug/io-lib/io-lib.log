@@ -1,0 +1,30 @@
+﻿Build started 2015-01-14 오후 6:17:34.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\io-lib\io-lib.vcxproj" on node 8 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt BufferedOutputStream.cpp ByteArrayInputStream.cpp ByteArrayOutputStream.cpp Channel.cpp DataInputStream.cpp DataOutputStream.cpp InputStream.cpp IOException.cpp OutputStream.cpp
+         OutputStream.cpp
+         IOException.cpp
+         InputStream.cpp
+         DataOutputStream.cpp
+         DataInputStream.cpp
+         Channel.cpp
+         ByteArrayOutputStream.cpp
+         ByteArrayInputStream.cpp
+         BufferedOutputStream.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib.lib" /NOLOGO "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\BufferedOutputStream.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\ByteArrayInputStream.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\ByteArrayOutputStream.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\Channel.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\DataInputStream.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\DataOutputStream.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\InputStream.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\IOException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib\OutputStream.obj"
+         io-lib.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\io-lib.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\io-lib\io-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.55

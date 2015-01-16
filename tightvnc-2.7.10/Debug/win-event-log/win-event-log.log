@@ -1,0 +1,19 @@
+﻿Build started 2015-01-14 오후 6:17:03.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\win-event-log\win-event-log.vcxproj" on node 6 (Build target(s)).
+     1>_MessageCompiler:
+         cmd.exe /C "C:\Users\Administrator\AppData\Local\Temp\tmp3fd2c60bc2fd454998ee3e3767cd9ffe.cmd"
+         mc.exe -U   MessageProvider.mc
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-event-log\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-event-log\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt WinEventLog.cpp
+         WinEventLog.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-event-log\MessageProvider.res" MessageProvider.rc 
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-event-log.lib" /NOLOGO /MACHINE:X86 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-event-log\MessageProvider.res"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-event-log\WinEventLog.obj"
+         win-event-log.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-event-log.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\win-event-log\win-event-log.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.75

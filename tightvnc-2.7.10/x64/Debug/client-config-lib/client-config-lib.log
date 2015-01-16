@@ -1,0 +1,20 @@
+﻿Build started 2015-01-14 오후 5:59:02.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\client-config-lib\client-config-lib.vcxproj" on node 7 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I. /I.. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\client-config-lib\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\client-config-lib\vc110.pdb" /Gd /TP /errorReport:prompt ConnectionConfig.cpp ConnectionConfigSM.cpp ViewerConfig.cpp ViewerSettingsManager.cpp
+         ViewerSettingsManager.cpp
+         ViewerConfig.cpp
+         ConnectionConfigSM.cpp
+         ConnectionConfig.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\client-config-lib.lib" /NOLOGO /MACHINE:X64 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\client-config-lib\ConnectionConfig.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\client-config-lib\ConnectionConfigSM.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\client-config-lib\ViewerConfig.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\client-config-lib\ViewerSettingsManager.obj"
+         client-config-lib.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\client-config-lib.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\client-config-lib\client-config-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.77

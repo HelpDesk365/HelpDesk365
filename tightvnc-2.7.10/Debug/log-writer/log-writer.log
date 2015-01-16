@@ -1,0 +1,20 @@
+﻿Build started 2015-01-14 오후 6:18:08.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\log-writer\log-writer.vcxproj" on node 7 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\log-writer\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\log-writer\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt FileAccount.cpp FileLogger.cpp LogDump.cpp LogWriter.cpp
+         LogWriter.cpp
+         LogDump.cpp
+         FileLogger.cpp
+         FileAccount.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\log-writer.lib" /NOLOGO "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\log-writer\FileAccount.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\log-writer\FileLogger.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\log-writer\LogDump.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\log-writer\LogWriter.obj"
+         log-writer.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\log-writer.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\log-writer\log-writer.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.61

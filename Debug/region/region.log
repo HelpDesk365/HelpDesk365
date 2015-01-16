@@ -1,0 +1,21 @@
+﻿Build started 2015-01-15 오전 3:52:40.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\region\region.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt RectSerializer.cpp Region.cpp
+         Region.cpp
+         RectSerializer.cpp
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\region\rectserializer.cpp(44): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region\vc110.pdb" /Gd /TC /analyze- /FC /errorReport:prompt x11region.c
+         x11region.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region.lib" /NOLOGO E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region\RectSerializer.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region\Region.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region\x11region.obj
+         region.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\region\region.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.57

@@ -1,0 +1,22 @@
+﻿Build started 2015-01-15 오전 3:52:59.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\file-lib\file-lib.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt EOFException.cpp File.cpp FileNotFoundException.cpp WinFile.cpp WinFileChannel.cpp
+         WinFileChannel.cpp
+         WinFile.cpp
+         FileNotFoundException.cpp
+         File.cpp
+         EOFException.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib.lib" /NOLOGO "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib\EOFException.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib\File.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib\FileNotFoundException.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib\WinFile.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib\WinFileChannel.obj"
+         file-lib.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\file-lib\file-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.72

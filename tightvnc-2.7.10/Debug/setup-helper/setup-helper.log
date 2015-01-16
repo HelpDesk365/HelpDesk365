@@ -1,0 +1,27 @@
+﻿Build started 2015-01-14 오후 6:18:56.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\setup-helper\setup-helper.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Isdk\inc /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D CUSTOMACTIONTEST_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CustomAction.cpp MsiProperties.cpp
+         MsiProperties.cpp
+         CustomAction.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper\setup-helper.res" setup-helper.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper.dll" /INCREMENTAL /NOLOGO msi.lib shlwapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"CustomAction.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper.lib" /MACHINE:X86 /SAFESEH /DLL "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper\setup-helper.res"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper\CustomAction.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper\MsiProperties.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\config-lib.lib"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib.lib"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\thread.lib"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\tvnserver-app.lib"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util.lib"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system.lib"
+     1>CustomAction.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper.lib and object C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper.exp
+         setup-helper.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\setup-helper.dll
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\setup-helper\setup-helper.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.92

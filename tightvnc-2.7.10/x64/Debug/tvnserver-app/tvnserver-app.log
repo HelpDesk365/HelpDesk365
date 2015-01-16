@@ -1,0 +1,41 @@
+﻿Build started 2015-01-14 오후 6:16:11.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\tvnserver-app\tvnserver-app.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I.. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\vc110.pdb" /Gd /TP /errorReport:prompt WinEventLogWriter.cpp
+         WinEventLogWriter.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app.lib" /NOLOGO /MACHINE:X64 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\AdditionalActionApplication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\AuthTracker.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\ConnectToTcpDispatcherThread.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\ControlAppAuthenticator.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\ControlClient.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\ControlServer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\CrashHook.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\DesktopServerApplication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\DesktopServerCommandLine.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\ExtraRfbServers.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\NamingDefs.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\OutgoingRfbConnectionThread.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\QueryConnectionApplication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\QueryConnectionCommandLine.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\QueryConnectionDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\RfbClientManager.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\RfbClientManagerEventListener.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\RfbServer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\ServerCommandLine.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\ServiceControlApplication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\ServiceControlCommandLine.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\SessionChangesWatcher.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\TvnServer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\TvnServerApplication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\TvnServerHelp.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\TvnServerListener.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\TvnService.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\WinEventLogWriter.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app\WsConfigRunner.obj"
+         tvnserver-app.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvnserver-app.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\tvnserver-app\tvnserver-app.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.30

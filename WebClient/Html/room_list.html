@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title> 
+	<link href="assets/css/style.css" rel="stylesheet">
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+	<script src="assets/js/common.js"></script>
+</head>
+<body>
+<header id="header">
+	<h1>온라인 상담</h1>
+	<nav>
+		<button type="button" class="btn-nav-toggle"><i class="fa fa-bars fa-lg"></i></button>
+		<ul>
+			<li><a href="#"><i class="fa fa-power-off"></i> 대화 종료하기</a></li>
+			<li><a href="#"><i class="fa fa-envelope-o"></i> 메일로 보내기</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="header-search">
+	<input type="text" placeholder="SEARCH">
+	<button type="submit"><i class="fa fa-search fa-lg"></i></button>
+</div>
+<ul class="chat-room-list">
+	<li class="ready">
+		<a href="#">
+			<span class="room-name">고객행복센터</span>
+			<span class="room-info">학습 오류 및 장애 신고</span>
+			<i class="icon-state">가능</i>
+		</a>
+	</li>
+	<li class="wait">
+		<a href="#">
+			<span class="room-name">기술지원센터</span>
+			<span class="room-info">학습 오류 및 장애 신고</span>
+			<i class="icon-state">98</i>
+		</a>
+	</li>
+	<li class="ready">
+		<a href="#">
+			<span class="room-name">고객행복센터</span>
+			<span class="room-info">학습 오류 및 장애 신고</span>
+			<i class="icon-state">가능</i>
+		</a>
+	</li>
+	<li class="wait">
+		<a href="#">
+			<span class="room-name">기술지원센터</span>
+			<span class="room-info">학습 오류 및 장애 신고</span>
+			<i class="icon-state">16</i>
+		</a>
+	</li>
+	<li class="ready">
+		<a href="#">
+			<span class="room-name">고객행복센터</span>
+			<span class="room-info">학습 오류 및 장애 신고</span>
+			<i class="icon-state">가능</i>
+		</a>
+	</li>
+	<li class="wait">
+		<a href="#">
+			<span class="room-name">기술지원센터</span>
+			<span class="room-info">학습 오류 및 장애 신고</span>
+			<i class="icon-state">5</i>
+		</a>
+	</li>
+	<li class="ready">
+		<a href="#">
+			<span class="room-name">고객행복센터</span>
+			<span class="room-info">학습 오류 및 장애 신고</span>
+			<i class="icon-state">가능</i>
+		</a>
+	</li>
+	<li class="wait">
+		<a href="#">
+			<span class="room-name">기술지원센터</span>
+			<span class="room-info">학습 오류 및 장애 신고</span>
+			<i class="icon-state">136</i>
+		</a>
+	</li>
+	<li class="off">
+		<a href="#">
+			<span class="room-name">고객행복센터 기술지원센터 고객행복센터 기술지원센터</span>
+			<span class="room-info">학습 오류 및 장애 신고 학습 오류 및 장애 신고 학습 오류 및 장애 신고</span>
+			<i class="icon-state">불가</i>
+		</a>
+	</li>
+</ul>
+
+
+
+
+<div id="modalChatWait" class="modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- <button type="button" class="modal-close" data-dismiss="modal"><i class="fa fa-close"></i></button> -->
+			<p class="text-center">
+				현재 고객행복센터의 모든 상담원이 상담중 입니다.<br>
+				현재 대기인원 : 13명<br>
+				예상 대기시간 : 3분
+			</p>
+			<div class="footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">계속 대기하기</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">연결 취소하기</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="modalChatOff" class="modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<p class="text-center">기술지원센터는 현재 온라인 상담이 불가능한 상태 입니다.</p>
+			<div class="footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(function(){
+	$('.chat-room-list .wait a').click(function(){
+		$('#modalChatWait').modal({show:true});
+	});
+	$('.chat-room-list .off a').click(function(){
+		$('#modalChatOff').modal({show:true});
+	});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+﻿Build started 2015-01-14 오후 6:17:45.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\desktop.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ApplicationDesktopFactory.cpp ClipboardListener.cpp ConsolePoller.cpp CopyRectDetector.cpp DesktopBaseImpl.cpp DesktopClientImpl.cpp DesktopConfigLocal.cpp DesktopServerWatcher.cpp DesktopWinImpl.cpp Win8CursorShape.cpp Win8DeskDuplicationThread.cpp WinCursorShapeUtils.cpp WinDxCriticalException.cpp WinDxException.cpp WinDxgiAcquiredFrame.cpp WinDxgiOutput.cpp WinDxgiOutput1.cpp WinDxgiOutputDuplication.cpp WinDxRecoverableException.cpp GrabOptimizator.cpp HookInstaller.cpp HooksUpdateDetector.cpp HookUpdateTimer.cpp InputBlocker.cpp MirrorDriverClient.cpp MirrorScreenDriver.cpp CursorPositionDetector.cpp CursorShapeGrabber.cpp CursorShapeDetector.cpp Poller.cpp SasUserInput.cpp ScreenGrabber.cpp UpdateContainer.cpp UpdateDetector.cpp UpdateFilter.cpp UpdateHandler.cpp UpdateHandlerImpl.cpp UpdateKeeper.cpp UpdateListener.cpp UpdateSendingListener.cpp UserInput.cpp WallpaperUtil.cpp Win32MirrorScreenDriver.cpp Win32ScreenDriver.cpp Win32ScreenDriverBaseImpl.cpp Win32ScreenDriverFactory.cpp Win8ScreenDriver.cpp Win8ScreenDriverImpl.cpp WinAutoMapDxgiSurface.cpp WinCustomD3D11Texture2D.cpp WindowsClipboard.cpp WindowsInputBlocker.cpp WindowsCursorShapeGrabber.cpp WindowsScreenGrabber.cpp WindowsUserInput.cpp WinD3D11Device.cpp WinDxgiAdapter.cpp WinDxgiDevice.cpp WinDxgiSurface.cpp WinD3D11Texture2D.cpp WinServiceDesktopFactory.cpp WinVideoRegionFounderImpl.cpp
+         WinVideoRegionFounderImpl.cpp
+         WinServiceDesktopFactory.cpp
+         WinD3D11Texture2D.cpp
+         WinDxgiSurface.cpp
+         WinDxgiDevice.cpp
+         WinDxgiAdapter.cpp
+         WinD3D11Device.cpp
+         WindowsUserInput.cpp
+         WindowsScreenGrabber.cpp
+         WindowsCursorShapeGrabber.cpp
+         WindowsInputBlocker.cpp
+         WindowsClipboard.cpp
+         WinCustomD3D11Texture2D.cpp
+         WinAutoMapDxgiSurface.cpp
+         Win8ScreenDriverImpl.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\win8screendriverimpl.cpp(123): warning C4101: 'e' : unreferenced local variable
+         Win8ScreenDriver.cpp
+         Win32ScreenDriverFactory.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\displayesc.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\win32screendriverbaseimpl.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Win32ScreenDriverBaseImpl.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\win32screendriverbaseimpl.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Win32ScreenDriver.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\win32screendriverbaseimpl.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Win32MirrorScreenDriver.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\displayesc.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\win32screendriverbaseimpl.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Generating Code...
+         Compiling...
+         WallpaperUtil.cpp
+         UserInput.cpp
+         UpdateSendingListener.cpp
+         UpdateListener.cpp
+         UpdateKeeper.cpp
+         UpdateHandlerImpl.cpp
+         UpdateHandler.cpp
+         UpdateFilter.cpp
+         UpdateDetector.cpp
+         UpdateContainer.cpp
+         ScreenGrabber.cpp
+         SasUserInput.cpp
+         Poller.cpp
+         CursorShapeDetector.cpp
+         CursorShapeGrabber.cpp
+         CursorPositionDetector.cpp
+         MirrorScreenDriver.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\displayesc.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\mirrorscreendriver.cpp(107): warning C4018: '<' : signed/unsigned mismatch
+         MirrorDriverClient.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\displayesc.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         InputBlocker.cpp
+         HookUpdateTimer.cpp
+         Generating Code...
+         Compiling...
+         HooksUpdateDetector.cpp
+         HookInstaller.cpp
+         GrabOptimizator.cpp
+         WinDxRecoverableException.cpp
+         WinDxgiOutputDuplication.cpp
+         WinDxgiOutput1.cpp
+         WinDxgiOutput.cpp
+         WinDxgiAcquiredFrame.cpp
+         WinDxException.cpp
+         WinDxCriticalException.cpp
+         WinCursorShapeUtils.cpp
+         Win8DeskDuplicationThread.cpp
+         Win8CursorShape.cpp
+         DesktopWinImpl.cpp
+         DesktopServerWatcher.cpp
+         DesktopConfigLocal.cpp
+         DesktopClientImpl.cpp
+         DesktopBaseImpl.cpp
+         CopyRectDetector.cpp
+         ConsolePoller.cpp
+         Generating Code...
+         Compiling...
+         ClipboardListener.cpp
+         ApplicationDesktopFactory.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop.lib" dxgi.lib d3d11.lib /NOLOGO "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\ApplicationDesktopFactory.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\ClipboardListener.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\ConsolePoller.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\CopyRectDetector.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\DesktopBaseImpl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\DesktopClientImpl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\DesktopConfigLocal.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\DesktopServerWatcher.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\DesktopWinImpl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\Win8CursorShape.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\Win8DeskDuplicationThread.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinCursorShapeUtils.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxCriticalException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxgiAcquiredFrame.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxgiOutput.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxgiOutput1.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxgiOutputDuplication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxRecoverableException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\GrabOptimizator.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\HookInstaller.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\HooksUpdateDetector.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\HookUpdateTimer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\InputBlocker.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\MirrorDriverClient.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\MirrorScreenDriver.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\CursorPositionDetector.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\CursorShapeGrabber.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\CursorShapeDetector.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\Poller.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\SasUserInput.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\ScreenGrabber.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\UpdateContainer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\UpdateDetector.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\UpdateFilter.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\UpdateHandler.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\UpdateHandlerImpl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\UpdateKeeper.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\UpdateListener.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\UpdateSendingListener.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\UserInput.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WallpaperUtil.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\Win32MirrorScreenDriver.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\Win32ScreenDriver.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\Win32ScreenDriverBaseImpl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\Win32ScreenDriverFactory.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\Win8ScreenDriver.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\Win8ScreenDriverImpl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinAutoMapDxgiSurface.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinCustomD3D11Texture2D.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WindowsClipboard.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WindowsInputBlocker.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WindowsCursorShapeGrabber.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WindowsScreenGrabber.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WindowsUserInput.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinD3D11Device.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxgiAdapter.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxgiDevice.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinDxgiSurface.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinD3D11Texture2D.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinServiceDesktopFactory.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop\WinVideoRegionFounderImpl.obj"
+     1>d3d11.lib(d3d11.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in dxgi.lib(dxgi.dll); second definition ignored
+     1>d3d11.lib(d3d11.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         desktop.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\desktop.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop\desktop.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:17.86

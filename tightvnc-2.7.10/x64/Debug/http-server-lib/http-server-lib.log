@@ -1,0 +1,28 @@
+﻿Build started 2015-01-14 오후 5:59:19.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\http-server-lib\http-server-lib.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I. /I.. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib\vc110.pdb" /Gd /TP /errorReport:prompt AppletParameter.cpp ArgList.cpp HttpClient.cpp HttpReply.cpp HttpRequest.cpp HttpRequestHandler.cpp HttpServer.cpp
+         HttpServer.cpp
+         HttpRequestHandler.cpp
+         HttpRequest.cpp
+     1>HttpRequest.cpp(97): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : see declaration of 'sscanf'
+         HttpReply.cpp
+         HttpClient.cpp
+         ArgList.cpp
+         AppletParameter.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib.lib" /NOLOGO /MACHINE:X64 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib\AppletParameter.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib\ArgList.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib\HttpClient.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib\HttpReply.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib\HttpRequest.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib\HttpRequestHandler.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib\HttpServer.obj"
+         http-server-lib.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\http-server-lib.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\http-server-lib\http-server-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.46

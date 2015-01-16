@@ -1,0 +1,116 @@
+﻿Build started 2015-01-14 오후 6:17:03.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\win-system\win-system.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /I. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt AnonymousPipe.cpp AnonymousPipeFactory.cpp AutoImpersonator.cpp CtrlAltDelSimulator.cpp CurrentConsoleProcess.cpp DibSection.cpp DynamicLibrary.cpp Environment.cpp Impersonator.cpp InputInjector.cpp Keyboard.cpp LocalWindowsApplication.cpp NamedPipe.cpp ParentProcess.cpp Pipe.cpp PipeClient.cpp PipeImpersonatedThread.cpp PipeServer.cpp Process.cpp ProcessHandle.cpp Registry.cpp RegistryKey.cpp SCMClient.cpp Screen.cpp SecurityAttributes.cpp security\SecurityDescriptor.cpp security\SecurityIdentifier.cpp Service.cpp SharedMemory.cpp Shell.cpp SystemException.cpp SystemInformation.cpp UipiControl.cpp VersionInfo.cpp WinClipboard.cpp WinCommandLineArgs.cpp WinCursor.cpp WindowsApplication.cpp WindowsDisplays.cpp WindowsEvent.cpp WindowsEventEx.cpp WinHandles.cpp WinHooks.cpp WinProcessCommandLine.cpp WinStaLibrary.cpp WinTimeMillis.cpp Workstation.cpp WsaStartup.cpp WTS.cpp
+         WTS.cpp
+         WsaStartup.cpp
+         Workstation.cpp
+         WinTimeMillis.cpp
+         WinStaLibrary.cpp
+         WinProcessCommandLine.cpp
+         WinHooks.cpp
+         WinHandles.cpp
+         WindowsEventEx.cpp
+         WindowsEvent.cpp
+         WindowsDisplays.cpp
+         WindowsApplication.cpp
+         WinCursor.cpp
+         WinCommandLineArgs.cpp
+         WinClipboard.cpp
+         VersionInfo.cpp
+         UipiControl.cpp
+         SystemInformation.cpp
+         SystemException.cpp
+         Shell.cpp
+         Generating Code...
+         Compiling...
+         SharedMemory.cpp
+         Service.cpp
+         SecurityIdentifier.cpp
+         SecurityDescriptor.cpp
+         SecurityAttributes.cpp
+         Screen.cpp
+         SCMClient.cpp
+         RegistryKey.cpp
+         Registry.cpp
+         ProcessHandle.cpp
+         Process.cpp
+         PipeServer.cpp
+         PipeImpersonatedThread.cpp
+         PipeClient.cpp
+         Pipe.cpp
+         ParentProcess.cpp
+         NamedPipe.cpp
+         LocalWindowsApplication.cpp
+         Keyboard.cpp
+         InputInjector.cpp
+         Generating Code...
+         Compiling...
+         Impersonator.cpp
+         Environment.cpp
+         DynamicLibrary.cpp
+         DibSection.cpp
+         CurrentConsoleProcess.cpp
+         CtrlAltDelSimulator.cpp
+         AutoImpersonator.cpp
+         AnonymousPipeFactory.cpp
+         AnonymousPipe.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system.lib" Wtsapi32.lib psapi.lib /NOLOGO "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\AnonymousPipe.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\AnonymousPipeFactory.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\AutoImpersonator.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\CtrlAltDelSimulator.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\CurrentConsoleProcess.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\DibSection.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\DynamicLibrary.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Environment.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Impersonator.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\InputInjector.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Keyboard.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\LocalWindowsApplication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\NamedPipe.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\ParentProcess.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Pipe.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\PipeClient.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\PipeImpersonatedThread.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\PipeServer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Process.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\ProcessHandle.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Registry.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\RegistryKey.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\SCMClient.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Screen.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\SecurityAttributes.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\SecurityDescriptor.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\SecurityIdentifier.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Service.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\SharedMemory.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Shell.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\SystemException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\SystemInformation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\UipiControl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\VersionInfo.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WinClipboard.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WinCommandLineArgs.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WinCursor.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WindowsApplication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WindowsDisplays.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WindowsEvent.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WindowsEventEx.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WinHandles.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WinHooks.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WinProcessCommandLine.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WinStaLibrary.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WinTimeMillis.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\Workstation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WsaStartup.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system\WTS.obj"
+     1>psapi.lib(PSAPI.DLL) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Wtsapi32.lib(WTSAPI32.dll); second definition ignored
+     1>psapi.lib(PSAPI.DLL) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         win-system.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\win-system.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\win-system\win-system.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:52.30

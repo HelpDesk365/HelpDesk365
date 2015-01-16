@@ -1,0 +1,40 @@
+﻿Build started 2015-01-15 오전 3:52:40.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\network\network.vcxproj" on node 8 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt socket\SocketAddressIPv4.cpp socket\SocketException.cpp socket\SocketIPv4.cpp socket\SocketStream.cpp socket\WindowsSocket.cpp RfbInputGate.cpp RfbOutputGate.cpp TcpClientThread.cpp TcpServer.cpp
+         TcpServer.cpp
+         TcpClientThread.cpp
+         RfbOutputGate.cpp
+         RfbInputGate.cpp
+         WindowsSocket.cpp
+         SocketStream.cpp
+         SocketIPv4.cpp
+         SocketException.cpp
+         SocketAddressIPv4.cpp
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\network\socket\socketaddressipv4.cpp(44): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\network\socket\socketaddressipv4.cpp(50): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\network\socket\socketaddressipv4.cpp(58): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\network\socket\socketaddressipv4.cpp(59): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\network\socket\socketaddressipv4.cpp(63): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network.lib" Ws2_32.lib /NOLOGO E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\SocketAddressIPv4.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\SocketException.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\SocketIPv4.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\SocketStream.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\WindowsSocket.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\RfbInputGate.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\RfbOutputGate.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\TcpClientThread.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network\TcpServer.obj
+         network.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\network\network.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.47

@@ -1,0 +1,78 @@
+﻿Build started 2015-01-15 오전 3:54:05.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\util\util.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt AnsiStringStorage.cpp BrokenHandleException.cpp Command.cpp CommandLine.cpp CommandLineArgs.cpp CommandLineFormatException.cpp CommandLineFormatHelp.cpp DateTime.cpp Deflater.cpp DemandTimer.cpp DesCrypt.cpp Exception.cpp Inflater.cpp KeyContainer.cpp Keymap.cpp MacroCommand.cpp md5.cpp ResourceLoader.cpp StringParser.cpp StringStorage.cpp StringTable.cpp Unicode.cpp UnicodeStringStorage.cpp Utf8StringStorage.cpp VncPassCrypt.cpp ZLibBase.cpp ZlibException.cpp
+         ZlibException.cpp
+         ZLibBase.cpp
+         VncPassCrypt.cpp
+         Utf8StringStorage.cpp
+         UnicodeStringStorage.cpp
+         Unicode.cpp
+         StringTable.cpp
+         StringStorage.cpp
+         StringParser.cpp
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\util\stringparser.cpp(33): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\util\stringparser.cpp(73): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\util\stringparser.cpp(92): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\util\stringparser.cpp(105): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\util\stringparser.cpp(118): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+         ResourceLoader.cpp
+         md5.cpp
+         MacroCommand.cpp
+         Keymap.cpp
+         KeyContainer.cpp
+         Inflater.cpp
+         Exception.cpp
+         DesCrypt.cpp
+         DemandTimer.cpp
+         Deflater.cpp
+         DateTime.cpp
+         Generating Code...
+         Compiling...
+         CommandLineFormatHelp.cpp
+         CommandLineFormatException.cpp
+         CommandLineArgs.cpp
+         CommandLine.cpp
+         Command.cpp
+         BrokenHandleException.cpp
+         AnsiStringStorage.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util.lib" version.lib /NOLOGO E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\AnsiStringStorage.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\BrokenHandleException.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\Command.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\CommandLine.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\CommandLineArgs.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\CommandLineFormatException.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\CommandLineFormatHelp.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\DateTime.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\Deflater.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\DemandTimer.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\DesCrypt.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\Exception.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\Inflater.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\KeyContainer.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\Keymap.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\MacroCommand.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\md5.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\ResourceLoader.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\StringParser.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\StringStorage.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\StringTable.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\Unicode.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\UnicodeStringStorage.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\Utf8StringStorage.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\VncPassCrypt.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\ZLibBase.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util\ZlibException.obj
+         util.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\util\util.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:24.62

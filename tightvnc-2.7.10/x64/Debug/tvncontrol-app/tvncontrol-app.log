@@ -1,0 +1,88 @@
+﻿Build started 2015-01-14 오후 5:59:32.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\tvncontrol-app\tvncontrol-app.vcxproj" on node 9 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I. /I.. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\vc110.pdb" /Gd /TP /errorReport:prompt AboutDialog.cpp ConnectCommand.cpp ConnectStringParser.cpp ControlApplication.cpp ControlAuth.cpp ControlAuthDialog.cpp ControlAuthException.cpp ControlCommand.cpp ControlCommandLine.cpp ControlGate.cpp ControlMessage.cpp ControlPipeName.cpp ControlProxy.cpp ControlTrayIcon.cpp DisconnectAllCommand.cpp MakeRfbConnectionCommand.cpp MakeTcpDispatcherConnCommand.cpp NamedPipeTransport.cpp Notificator.cpp OutgoingConnectionDialog.cpp ReloadConfigCommand.cpp RemoteException.cpp RfbClientInfo.cpp SetPasswordsDialog.cpp ShareAppCommand.cpp ShareDisplayCommand.cpp ShareFullCommand.cpp SharePrimaryCommand.cpp ShareRectCommand.cpp ShareWindowCommand.cpp ShutdownCommand.cpp SocketIPv4Transport.cpp TcpDispatcherConnectionDialog.cpp Transport.cpp TransportFactory.cpp UpdateLocalConfigCommand.cpp UpdateRemoteConfigCommand.cpp
+         UpdateRemoteConfigCommand.cpp
+         UpdateLocalConfigCommand.cpp
+         TransportFactory.cpp
+         Transport.cpp
+         TcpDispatcherConnectionDialog.cpp
+         SocketIPv4Transport.cpp
+         ShutdownCommand.cpp
+         ShareWindowCommand.cpp
+         ShareRectCommand.cpp
+         SharePrimaryCommand.cpp
+         ShareFullCommand.cpp
+         ShareDisplayCommand.cpp
+         ShareAppCommand.cpp
+         SetPasswordsDialog.cpp
+         RfbClientInfo.cpp
+         RemoteException.cpp
+         ReloadConfigCommand.cpp
+         OutgoingConnectionDialog.cpp
+         Notificator.cpp
+         NamedPipeTransport.cpp
+         Generating Code...
+         Compiling...
+         MakeTcpDispatcherConnCommand.cpp
+         MakeRfbConnectionCommand.cpp
+         DisconnectAllCommand.cpp
+         ControlTrayIcon.cpp
+         ControlProxy.cpp
+         ControlPipeName.cpp
+         ControlMessage.cpp
+         ControlGate.cpp
+         ControlCommandLine.cpp
+         ControlCommand.cpp
+         ControlAuthException.cpp
+         ControlAuthDialog.cpp
+         ControlAuth.cpp
+         ControlApplication.cpp
+         ConnectStringParser.cpp
+         ConnectCommand.cpp
+         AboutDialog.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app.lib" /NOLOGO /MACHINE:X64 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\AboutDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ConnectCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ConnectStringParser.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlApplication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlAuth.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlAuthDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlAuthException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlCommandLine.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlGate.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlMessage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlPipeName.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlProxy.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ControlTrayIcon.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\DisconnectAllCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\MakeRfbConnectionCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\MakeTcpDispatcherConnCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\NamedPipeTransport.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\Notificator.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\OutgoingConnectionDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ReloadConfigCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\RemoteException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\RfbClientInfo.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\SetPasswordsDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ShareAppCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ShareDisplayCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ShareFullCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\SharePrimaryCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ShareRectCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ShareWindowCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\ShutdownCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\SocketIPv4Transport.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\TcpDispatcherConnectionDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\Transport.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\TransportFactory.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\UpdateLocalConfigCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app\UpdateRemoteConfigCommand.obj"
+         tvncontrol-app.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\tvncontrol-app.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\tvncontrol-app\tvncontrol-app.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:50.12

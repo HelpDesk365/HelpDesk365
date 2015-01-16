@@ -1,0 +1,10 @@
+C:\Users\Administrator\Downloads\nvnc-0b6ed3334c6e\nvnc_0b6ed3334c6e\[CSharp]NVNC\bin\Debug\Example NVNC Server.exe.config
+C:\Users\Administrator\Downloads\nvnc-0b6ed3334c6e\nvnc_0b6ed3334c6e\[CSharp]NVNC\obj\x86\Debug\NVNC Example.csprojResolveAssemblyReference.cache
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[CSharp]NVNC\bin\Debug\Example NVNC Server.exe.config
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[CSharp]NVNC\bin\Debug\Example NVNC Server.exe
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[CSharp]NVNC\bin\Debug\Example NVNC Server.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[CSharp]NVNC\bin\Debug\NVNC.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[CSharp]NVNC\bin\Debug\NVNC.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[CSharp]NVNC\obj\x86\Debug\NVNC Example.csprojResolveAssemblyReference.cache
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[CSharp]NVNC\obj\x86\Debug\Example NVNC Server.exe
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[CSharp]NVNC\obj\x86\Debug\Example NVNC Server.pdb

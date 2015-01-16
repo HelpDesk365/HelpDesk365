@@ -1,0 +1,46 @@
+﻿Build started 2015-01-14 오후 6:17:58.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\rfb-sconn\rfb-sconn.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CapContainer.cpp ClientInputHandler.cpp ClipboardExchange.cpp EncodeOptions.cpp Encoder.cpp EncoderStore.cpp HextileEncoder.cpp JpegCompressor.cpp JpegEncoder.cpp RfbClient.cpp RfbCodeRegistrator.cpp RfbDispatcher.cpp RfbInitializer.cpp RreEncoder.cpp TightEncoder.cpp TightPalette.cpp ZrleEncoder.cpp
+         ZrleEncoder.cpp
+         TightPalette.cpp
+         TightEncoder.cpp
+         RreEncoder.cpp
+         RfbInitializer.cpp
+         RfbDispatcher.cpp
+         RfbCodeRegistrator.cpp
+         RfbClient.cpp
+         JpegEncoder.cpp
+         JpegCompressor.cpp
+         HextileEncoder.cpp
+         EncoderStore.cpp
+         Encoder.cpp
+         EncodeOptions.cpp
+         ClipboardExchange.cpp
+         ClientInputHandler.cpp
+         CapContainer.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn.lib" /NOLOGO "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\CapContainer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\ClientInputHandler.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\ClipboardExchange.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\EncodeOptions.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\Encoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\EncoderStore.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\HextileEncoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\JpegCompressor.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\JpegEncoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\RfbClient.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\RfbCodeRegistrator.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\RfbDispatcher.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\RfbInitializer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\RreEncoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\TightEncoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\TightPalette.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn\ZrleEncoder.obj"
+         rfb-sconn.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\rfb-sconn.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\rfb-sconn\rfb-sconn.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:22.94

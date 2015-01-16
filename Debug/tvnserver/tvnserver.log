@@ -1,0 +1,46 @@
+﻿Build started 2015-01-15 오전 3:59:03.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\tvnserver\tvnserver.vcxproj" on node 2 (Build target(s)).
+     1>PreLinkEvent:
+         cl /MTd /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver\ "  /nologo /D_UNICODE /c BuildTime.cpp
+         :VCEnd
+         BuildTime.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver.exe" /INCREMENTAL /NOLOGO comctl32.lib "E:\OpenSource\HelpDesk365\HelpDesk365\\tightvnc-2.7.10\libjpeg-turbo\jpeg-static.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTDEPENDENCY:"type='Win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='6595b64144ccf1df' language='*'" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:DPIAware.manifest /DEBUG /PDB:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver.lib" /MACHINE:X86 /SAFESEH E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver\MessageProvider.res
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver\tvnserver.res
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver\BuildTime.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver\tvnserver.obj
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\config-lib.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc.lib"
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop.lib
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\fb-update-sender.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\file-lib.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-common.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-server-lib.lib"
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui.lib
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util.lib
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\http-server-lib.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\io-lib.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-server.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-writer.lib"
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\network.lib
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\region.lib
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb-sconn.lib"
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb.lib
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\server-config-lib.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tcp-dispatcher.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\win-event-log.lib"
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\thread.lib
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvncontrol-app.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver-app.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\win-system.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib.lib"
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib.lib
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\screenhooks32.lib
+     1>BuildTime.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     1>LIBCMTD.lib(crt0init.obj) : warning LNK4098: defaultlib 'libcmt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+         tvnserver.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver.exe
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\tvnserver\tvnserver.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.98

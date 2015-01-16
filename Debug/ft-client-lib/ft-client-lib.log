@@ -1,0 +1,52 @@
+﻿Build started 2015-01-15 오전 3:52:40.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\ft-client-lib\ft-client-lib.vcxproj" on node 7 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D __WIN32__ /D _WINSTATIC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CopyOperation.cpp DownloadOperation.cpp FileInfoList.cpp FileTransferCore.cpp FileTransferEventAdapter.cpp FileTransferEventHandler.cpp FileTransferInterface.cpp FileTransferMessageProcessor.cpp FileTransferOperation.cpp FileTransferReplyBuffer.cpp FileTransferRequestSender.cpp LocalFilesDeleteOperation.cpp OperationEventListener.cpp OperationNotPermittedException.cpp OperationSupport.cpp RemoteFileListOperation.cpp RemoteFileRenameOperation.cpp RemoteFilesDeleteOperation.cpp RemoteFolderCreateOperation.cpp UploadOperation.cpp
+         UploadOperation.cpp
+         RemoteFolderCreateOperation.cpp
+         RemoteFilesDeleteOperation.cpp
+         RemoteFileRenameOperation.cpp
+         RemoteFileListOperation.cpp
+         OperationSupport.cpp
+         OperationNotPermittedException.cpp
+         OperationEventListener.cpp
+         LocalFilesDeleteOperation.cpp
+         FileTransferRequestSender.cpp
+         FileTransferReplyBuffer.cpp
+         FileTransferOperation.cpp
+         FileTransferMessageProcessor.cpp
+         FileTransferInterface.cpp
+         FileTransferEventHandler.cpp
+         FileTransferEventAdapter.cpp
+         FileTransferCore.cpp
+         FileInfoList.cpp
+         DownloadOperation.cpp
+         CopyOperation.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib.lib" /NOLOGO /MACHINE:X86 "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\CopyOperation.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\DownloadOperation.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\FileInfoList.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\FileTransferCore.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\FileTransferEventAdapter.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\FileTransferEventHandler.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\FileTransferInterface.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\FileTransferMessageProcessor.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\FileTransferOperation.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\FileTransferReplyBuffer.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\FileTransferRequestSender.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\LocalFilesDeleteOperation.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\OperationEventListener.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\OperationNotPermittedException.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\OperationSupport.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\RemoteFileListOperation.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\RemoteFileRenameOperation.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\RemoteFilesDeleteOperation.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\RemoteFolderCreateOperation.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib\UploadOperation.obj"
+         ft-client-lib.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\ft-client-lib.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\ft-client-lib\ft-client-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:25.97

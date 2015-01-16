@@ -1,0 +1,36 @@
+﻿Build started 2015-01-14 오후 5:59:23.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\rfb\rfb.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I.. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\vc110.pdb" /Gd /TP /errorReport:prompt AuthDefs.cpp CursorShape.cpp FrameBuffer.cpp HostPath.cpp MsgDefs.cpp PixelFormat.cpp RfbKeySym.cpp StandardPixelFormatFactory.cpp TunnelDefs.cpp VendorDefs.cpp EncodingDefs.cpp PixelConverter.cpp
+         PixelConverter.cpp
+         EncodingDefs.cpp
+         VendorDefs.cpp
+         TunnelDefs.cpp
+         StandardPixelFormatFactory.cpp
+         RfbKeySym.cpp
+         PixelFormat.cpp
+         MsgDefs.cpp
+         HostPath.cpp
+         FrameBuffer.cpp
+         CursorShape.cpp
+         AuthDefs.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb.lib" /NOLOGO /MACHINE:X64 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\AuthDefs.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\CursorShape.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\FrameBuffer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\HostPath.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\MsgDefs.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\PixelFormat.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\RfbKeySym.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\StandardPixelFormatFactory.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\TunnelDefs.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\VendorDefs.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\EncodingDefs.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb\PixelConverter.obj"
+         rfb.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\rfb.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\rfb\rfb.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.01

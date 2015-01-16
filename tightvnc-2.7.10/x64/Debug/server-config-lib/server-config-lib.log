@@ -1,0 +1,9 @@
+﻿Build started 2015-01-14 오후 6:15:23.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\server-config-lib.vcxproj" on node 5 (Build target(s)).
+     1>Lib:
+         server-config-lib.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\server-config-lib.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\server-config-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.06

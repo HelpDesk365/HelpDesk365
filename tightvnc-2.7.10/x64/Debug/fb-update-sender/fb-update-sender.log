@@ -1,0 +1,22 @@
+﻿Build started 2015-01-14 오후 5:59:31.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\fb-update-sender\fb-update-sender.vcxproj" on node 7 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I.. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\fb-update-sender\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\fb-update-sender\vc110.pdb" /Gd /TP /errorReport:prompt CursorUpdates.cpp UpdateSender.cpp UpdSenderMsgDefs.cpp ViewPort.cpp ViewPortState.cpp
+         ViewPortState.cpp
+         ViewPort.cpp
+         UpdSenderMsgDefs.cpp
+         UpdateSender.cpp
+         CursorUpdates.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\fb-update-sender.lib" /NOLOGO /MACHINE:X64 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\fb-update-sender\CursorUpdates.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\fb-update-sender\UpdateSender.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\fb-update-sender\UpdSenderMsgDefs.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\fb-update-sender\ViewPort.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\fb-update-sender\ViewPortState.obj"
+         fb-update-sender.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\fb-update-sender.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\fb-update-sender\fb-update-sender.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.83

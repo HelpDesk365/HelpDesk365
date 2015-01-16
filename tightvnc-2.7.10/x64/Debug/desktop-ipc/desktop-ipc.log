@@ -1,0 +1,44 @@
+﻿Build started 2015-01-14 오후 5:59:09.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop-ipc\desktop-ipc.vcxproj" on node 9 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I.. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\vc110.pdb" /Gd /TP /errorReport:prompt BlockingGate.cpp BlockingInputGate.cpp BlockingOutputGate.cpp ClientListener.cpp ConfigServer.cpp DesktopConfigClient.cpp DesktopServerProto.cpp DesktopSrvDispatcher.cpp GateKicker.cpp GateKickHandler.cpp ReconnectException.cpp ReconnectingChannel.cpp UpdateHandlerClient.cpp UpdateHandlerServer.cpp UserInputClient.cpp UserInputServer.cpp
+         UserInputServer.cpp
+         UserInputClient.cpp
+         UpdateHandlerServer.cpp
+         UpdateHandlerClient.cpp
+         ReconnectingChannel.cpp
+         ReconnectException.cpp
+         GateKickHandler.cpp
+         GateKicker.cpp
+         DesktopSrvDispatcher.cpp
+         DesktopServerProto.cpp
+         DesktopConfigClient.cpp
+         ConfigServer.cpp
+         ClientListener.cpp
+         BlockingOutputGate.cpp
+         BlockingInputGate.cpp
+         BlockingGate.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc.lib" /NOLOGO /MACHINE:X64 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\BlockingGate.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\BlockingInputGate.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\BlockingOutputGate.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\ClientListener.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\ConfigServer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\DesktopConfigClient.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\DesktopServerProto.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\DesktopSrvDispatcher.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\GateKicker.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\GateKickHandler.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\ReconnectException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\ReconnectingChannel.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\UpdateHandlerClient.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\UpdateHandlerServer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\UserInputClient.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc\UserInputServer.obj"
+         desktop-ipc.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\desktop-ipc.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\desktop-ipc\desktop-ipc.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:12.16

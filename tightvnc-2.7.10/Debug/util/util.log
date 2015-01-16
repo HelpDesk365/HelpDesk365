@@ -1,0 +1,78 @@
+﻿Build started 2015-01-14 오후 6:17:03.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\util\util.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt AnsiStringStorage.cpp BrokenHandleException.cpp Command.cpp CommandLine.cpp CommandLineArgs.cpp CommandLineFormatException.cpp CommandLineFormatHelp.cpp DateTime.cpp Deflater.cpp DemandTimer.cpp DesCrypt.cpp Exception.cpp Inflater.cpp KeyContainer.cpp Keymap.cpp MacroCommand.cpp md5.cpp ResourceLoader.cpp StringParser.cpp StringStorage.cpp StringTable.cpp Unicode.cpp UnicodeStringStorage.cpp Utf8StringStorage.cpp VncPassCrypt.cpp ZLibBase.cpp ZlibException.cpp
+         ZlibException.cpp
+         ZLibBase.cpp
+         VncPassCrypt.cpp
+         Utf8StringStorage.cpp
+         UnicodeStringStorage.cpp
+         Unicode.cpp
+         StringTable.cpp
+         StringStorage.cpp
+         StringParser.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\util\stringparser.cpp(33): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\util\stringparser.cpp(73): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\util\stringparser.cpp(92): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\util\stringparser.cpp(105): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\util\stringparser.cpp(118): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+         ResourceLoader.cpp
+         md5.cpp
+         MacroCommand.cpp
+         Keymap.cpp
+         KeyContainer.cpp
+         Inflater.cpp
+         Exception.cpp
+         DesCrypt.cpp
+         DemandTimer.cpp
+         Deflater.cpp
+         DateTime.cpp
+         Generating Code...
+         Compiling...
+         CommandLineFormatHelp.cpp
+         CommandLineFormatException.cpp
+         CommandLineArgs.cpp
+         CommandLine.cpp
+         Command.cpp
+         BrokenHandleException.cpp
+         AnsiStringStorage.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util.lib" version.lib /NOLOGO "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\AnsiStringStorage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\BrokenHandleException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\Command.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\CommandLine.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\CommandLineArgs.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\CommandLineFormatException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\CommandLineFormatHelp.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\DateTime.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\Deflater.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\DemandTimer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\DesCrypt.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\Exception.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\Inflater.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\KeyContainer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\Keymap.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\MacroCommand.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\md5.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\ResourceLoader.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\StringParser.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\StringStorage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\StringTable.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\Unicode.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\UnicodeStringStorage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\Utf8StringStorage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\VncPassCrypt.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\ZLibBase.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util\ZlibException.obj"
+         util.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\util.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\util\util.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:40.73

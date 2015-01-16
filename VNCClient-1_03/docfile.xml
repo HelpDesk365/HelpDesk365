@@ -1,0 +1,1202 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VNCClient</name>
+    </assembly>
+    <members>
+        <member name="T:VNC.VNCClient">
+            <summary> Application main class </summary>
+        </member>
+        <member name="F:VNC.VNCClient.port">
+            <summary> the port to connect to </summary>
+        </member>
+        <member name="F:VNC.VNCClient.server">
+            <summary> the server to connect to </summary>
+        </member>
+        <member name="F:VNC.VNCClient.config">
+            <summary> the configuration information </summary>
+        </member>
+        <member name="M:VNC.VNCClient.Main(System.String[])">
+            <summary> the application entry point </summary>
+        </member>
+        <member name="M:VNC.VNCClient.getConnectionInformation(System.String[])">
+            <summary> retrieve the connection Information </summary>
+        </member>
+        <member name="M:VNC.VNCClient.connect">
+            <summary> connect to the VNC-Server </summary>
+        </member>
+        <member name="M:VNC.VNCClient.connectView(VNC.RFBDrawing.RFBSurface)">
+            <summary> create and connect a view to the surface </summary>
+        </member>
+        <member name="T:VNC.ClientWin">
+            <summary> one of the application windows </summary>
+            <remarks> this Windows is a container for an RFB-View, an RFB-View
+            is connected to this window using the registerView method. </remarks>
+        </member>
+        <member name="M:VNC.ClientWin.#ctor">
+            <summary> constructs a Window for showing an RFB-View </summary>
+        </member>
+        <member name="M:VNC.ClientWin.registerView(VNC.RFBDrawing.RFBView)">
+            <summary>
+            register a view for beeing displayed in this window
+            before calling this, view must be connected to a RFBSurface
+            </summary>
+        </member>
+        <member name="M:VNC.ClientWin.windowClosing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary> handles window-close events </summary>
+        </member>
+        <member name="P:VNC.ClientWin.ServerName">
+            <summary> gets the servername of the vnc-server. </summary>
+            <remarks> This name is sent during connection handshake. This window got this name from the RFBView it contains.
+            Getting the value from this property makes only sense after a view is registered. </remarks>
+        </member>
+        <member name="T:VNC.ConnectionForm">
+            <summary> a from for asking for server-address and server-port </summary>
+        </member>
+        <member name="M:VNC.ConnectionForm.#ctor">
+            <summary> constructor for a connection form </summary>
+        </member>
+        <member name="M:VNC.ConnectionForm.getServer">
+            <summary> gets the server-identifier part of the input </summary>
+        </member>
+        <member name="M:VNC.ConnectionForm.getPort">
+            <summary> gets the server-port part of the input </summary>
+        </member>
+        <member name="P:VNC.ConnectionForm.DefaultSize">
+            <summary> the default size of this window (overridden) </summary>
+        </member>
+        <member name="T:VNC.RFBDrawing.RFBSurface">
+            <summary>
+            The RFBSurface class contains the data of the remote frame buffer and handles updates of the
+            remote frame buffer
+            </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.RFBSurface.protocolHandler">
+            <summary> reference to protocol-Handler </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.RFBSurface.views">
+            <summary> the vies connected to this surface </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.RFBSurface.pixDecod">
+            <summary> decodes pixelvalues from stream </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.RFBSurface.drawSup">
+            <summary> the drawSupport object: facility for drawing </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.RFBSurface.decoders">
+            <summary> the decoders for decoding updates, O(1) access in normal case </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.RFBSurface.decoderPriorities">
+            <summary> the decoders sorted by the priority the client wishes to use them </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.RFBSurface.config">
+            <summary> the configuration information </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.#ctor(System.String,System.Int32,VNC.Config.VNCConfiguration)">
+            <summary> constructor for an RFBSurface </summary>
+            <param name="server">the server to connect to</param>
+            <param name="port">the port to connect to</param>
+            <param name="config">the configuration information read from the config-file</param>						
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.connectSurfaceToView(VNC.RFBDrawing.RFBView)">
+            <summary> Register views to notify
+            Views displays the content of the RFBSurface
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.disconnectView(VNC.RFBDrawing.RFBView)">
+            <summary> disconnect a view from the surface </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.closeConnection">
+            <summary> is called, when last view gets disconnected </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.establishConnection(System.String,System.Int32)">
+            <summary> connects this RFBSurface to the RFBServer,
+            afterwards this surface stores pixeldata and informs the server of
+            events
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.createDecoders">
+            <summary> create the configured Decoders. </summary>
+            <remarks> for extending the RFB-Protocol by an own decoder, add it to the decoder section
+            in the VNCClient.Config.xml file.
+            Use the fully qualified name of the decoder in the config-file.
+            If the decoder is in a separate dll, append the name of the dll to the name after a comma,
+            eg. VNC.RFBDrawing.UpdateDecoders.MyOwnDecoder,decoder for MyOwnDecoder in decoder.dll
+            A decoder which should be usable here, must provide a no-argument constructor.
+            </remarks>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.registerDecoder(VNC.RFBDrawing.UpdateDecoders.Decoder)">
+            <summary> registers a Decoder in the order the client wishes to use it, highest priority decoder
+            must be registered first
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.connectDecoders">
+            <summary> connect the decoders to the DrawSupport instance; after completion of this method, the decoders are usable </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.getFullUpdate">
+            <summary> gets a full update from the server </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.notifyView(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> notify interested views, changement discribed by x,y,width,height </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.decodeUpdate(System.UInt32,System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <summary>
+            decodes a received update with the encoding encoding
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.gotRFBUpdate">
+            <summary>
+            this method decides what to do on an update receiving
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.updateDone(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            this method decides how to proceed after a successful update of the framebuffer
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.serverCutText(VNC.RFBProtocolHandling.RFBNetworkStream)">
+            <summary>
+            new cutbuffer content at the server
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.beep">
+            <summary>
+            handling a beep received from server, dummy implementation at the moment
+            (how to play sound using only safe code)
+            </summary>		
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.setColorMapEntries(VNC.RFBProtocolHandling.RFBNetworkStream)">
+            <summary> reading a color-Map: unsopperted by this client </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.handlePointerEvent(System.Byte,System.UInt16,System.UInt16)">
+            <summary> handles a pointer event, used by the connected views to inform the surface </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.handleKeyEvent(System.UInt32,System.Boolean)">
+            <summary> handles a key event, used by the connected views to inform the surface </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBSurface.sendClientCutText">
+            <summary> user wants to paste CutBuffer-Contents to server </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.RFBSurface.BufferWidth">
+            <summary> the width of the remote framebuffer </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.RFBSurface.BufferHeight">
+            <summary> the height of the remote framebuffer </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.RFBSurface.Depth">
+            <summary> the depth selected for usage at client side. The depth is choosable by the client during connection handshake </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.RFBSurface.ServerName">
+            <summary> the name of the server received during connection establishment </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.RFBSurface.Connected">
+            <summary> is this surface has an established connection to a VNC-Server </summary>
+        </member>
+        <member name="T:VNC.RFBDrawing.RFBView">
+            <summary>
+            An instance of this class shows the content of an RFB-Surface.
+            </summary>
+            <remarks>
+            an RFBView observes a RFBSurface. This RFBSurface contains the data of the remote frame buffer.
+            The RFBView show the content of this surface. Furthermore an RFB-View informs
+            an RFBSurface of events like mouse move or key press.
+            </remarks>
+        </member>
+        <member name="F:VNC.RFBDrawing.RFBView.surface">
+            <summary> the surface, this view is connected to </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.RFBView.mouseMask">
+            <summary> the state of the mousebuttons </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.#ctor">
+            <summary> constructor for an RFBView </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.notifyUpdate(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            the surface calls this method, when the data has changed
+            changed region: x,y,width,height
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.repaintRegion(System.Drawing.Rectangle)">
+            <summary>
+            repaints the region decribed by region
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.connect(System.Windows.Forms.Control,VNC.RFBDrawing.RFBSurface)">
+            <summary>
+            this method must be called to connect the view to the parent-Control and to the Surface
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.setRFBSurface(VNC.RFBDrawing.RFBSurface)">
+            <summary> connect this view to a surface </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.setDrawSupport(DrawingSupport.DrawSupport)">
+            <summary> sets the drawsupport which is used for drawing to screen </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.setRFBSize(System.Int32,System.Int32)">
+            <summary>
+            this method is called, to set the size of the frame buffer after the size
+            of the remote desktop is sent during connection establishment
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.disconnectView">
+            <summary>
+            disconnect the view from the surface
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.updateSizeAndScrollbars">
+            <summary>
+            updates the size of the drawable region and updates the position of the scrollbars
+            after resizing or after connection establishment
+            scrollbars: used in a way that should be easy for drawing
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.viewPaint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary> react to: rfb-View lost its content, needs repaint.
+            (reaction to paint-event)
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.resizeView(System.Object,System.EventArgs)">
+            <summary> handle resize of the view (reaction to resize event) </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.handleHScroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+            <summary> handles a horizontal scroll event (reaction to event) </summary>		
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.handleVScroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+            <summary> handles a vertical scroll event (reaction to event) </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.viewMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary> mouse button down (reaction to event) </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.viewMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary> mouse button up (reaction to event) </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.viewMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary> mouse move (reaction to event) </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.viewKeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary> key up (reaction to event) </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.viewKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary> key down (reaction to event) </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.RFBView.handleModifierKeys(System.Windows.Forms.KeyEventArgs)">
+            <summary> inform surface of modifier key status change </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.RFBView.ServerName">
+            <summary>the serverName of the server the shown RFB-Surface is connected to</summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.RFBView.Connected">
+            <summary> is the view connected to a surface </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.RFBView.DrawableSize">
+            <summary> gets the size usable to draw in this view </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.RFBView.ShowedRectangle">
+            <summary>
+            this method specifies the rectangle of the RFBSurface to show
+            </summary>
+        </member>
+        <member name="T:VNC.RFBDrawing.KeyTable">
+            <summary>
+            KeyTable containts mapping from keys to keySyms
+            </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.KeyTable.singleKeyTable">
+            <summary> the singleton keyTable </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.KeyTable.getKeyTable">
+            <summary> get an instance of the keytable (singleton pattern) </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.KeyTable.getKeySym(System.Windows.Forms.KeyEventArgs)">
+            <summary> get a keySym for the key </summary>
+        </member>
+        <member name="T:VNC.RFBProtocolHandling.RFBProtocolHandler">
+            <summary> 
+            this class handles sending, receiving and dispatching of VNC-Messages
+            </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.RFBProtocolHandler.stream">
+            <summary> the connection used by the protocol-handler </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.RFBProtocolHandler.surface">
+            <summary> the surface preserving the pixeldata at the client </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.RFBProtocolHandler.handler">
+            <summary> The Thread handing incoming regular protocol messages </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.#ctor(System.String,System.Int32,VNC.RFBDrawing.RFBSurface)">
+            <summary> creates a protocol handler, which handels a vnc-connection
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.handshake">
+            <summary> handshake with the vnc-server </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.closeConnection">
+            <summary> closing connection to the vnc-server </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.startMessageProcessing">
+            <summary> starting listener thread, this thread handles incoming
+            messages after handshake is completed
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.processIncomingMessages">
+            <summary>
+            Listener thread action: handles incoming normal VNC-Messages (after handshake)
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendProtocolMessage(System.UInt32,System.UInt32)">
+            <summary>
+            this methods sends the protocol message to the server and starts
+            the handshake with the server with it
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.receiveProtocolMessage(System.UInt32@,System.UInt32@)">
+            <summary>
+            receive the Protocol Message from the Server
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.authenticate">
+            <summary> do authentication </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.receiveServerInitialization">
+            <summary> getting serverInitalization </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendClientInitialization">
+            <summary> sends the client initialization </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendSetPixelFormat(VNC.RFBProtocolHandling.PixelFormat)">
+            <summary> send setPixelFormat-message </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendSetEncodings(System.Collections.ArrayList)">
+            <summary> send all supported formats </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendFBIncrementalUpdateRequest(System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <summary> send framebuffer-Update message: 
+            implicitly tells server, that the last sent update-messages was processed at the client
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendFBNonIncrementalUpdateRequest(System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <summary> send a full update request </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendFBUpdateRequest(System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.Boolean)">
+            <summary> send update request, implicitly tells server, that the last sent update-messages was processed at the client </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendPointerEvent(System.Byte,System.UInt16,System.UInt16)">
+            <summary> inform the server of a pointer event </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendKeyEvent(System.UInt32,System.Boolean)">
+            <summary> inform the server of a key event </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.setClientCutText(System.String)">
+            <summary> inform the server: client has new text in its cutbuffer </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBProtocolHandler.sendColorMap(System.Drawing.Imaging.ColorPalette)">
+            <summary> Fixes the colormap at the server
+            not really supported
+            </summary>
+        </member>
+        <member name="T:VNC.RFBProtocolHandling.RFBTcpClient">
+            <summary> this class represents a TCP-Client.
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBTcpClient.#ctor">
+            <summary> no argument constructor </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBTcpClient.GetRFBStream">
+            <summary> get an RFBStream for this connection </summary>
+        </member>
+        <member name="T:VNC.RFBProtocolHandling.ReadByteStream">
+            <summary>
+            interface specifing the functionality of a stream, from which byte could be read.
+            </summary>
+            <remarks>
+            This interface is used for the PixelDecoders, because they should support decoding pixels from all streams,
+            which allow reading bytes, e.g. RFBNetworkStream or InflateStream (stream for reading zlib compressed data)
+            </remarks>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.ReadByteStream.ReadByte">
+            <summary> reading a single byte </summary>
+        </member>
+        <member name="T:VNC.RFBProtocolHandling.RFBNetworkStream">
+            <summary>
+            this class represents a Network stream, knowing the VNC-Datatypes
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.#ctor(System.Net.Sockets.TcpClient)">
+            <summary> constructs an RFBStream for the connection represented by the TCPClient client </summary>
+            <param name="client">the connection</param>	
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.ReadByte">
+            <summary> blocking readByte: returns exactly one byte </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.ReadBlocking(System.Byte[],System.Int32,System.Int32)">
+            <summary> blocking reading of multiple bytes </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary> reading without blocking, returns after at most size bytes have been read </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.ReadCard16">
+            <summary> read a card16 from stream </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.ReadCard32">
+            <summary> read a card32 from stream </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.ReadPixelFormat">
+            <summary> read a pixelformat from stream </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.ReadString(System.UInt32)">
+            <summary> read a string with the given length from stream </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.Flush">
+            <summary>
+            flushing the stream: RFBStream uses a buffer to enhance network throughoutput
+            this method flushes the buffer
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.WriteByte(System.Byte)">
+            <summary> write a byte to the stream </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary> write a number of bytes from a byte array to the stream </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.WriteCard16(System.UInt16)">
+            <summary> write a card16 to the stream </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.WriteCard32(System.UInt32)">
+            <summary> write a card32 to the stream </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.WriteString(System.String)">
+            <summary> wirte a string to the stream </summary>		
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.RFBNetworkStream.WritePixelFormat(VNC.RFBProtocolHandling.PixelFormat)">
+            <summary> write a pixelformat to the stream </summary>
+        </member>
+        <member name="T:VNC.RFBProtocolHandling.InvalidRFBDataException">
+            <summary> Exception class for invalid data</summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.InvalidRFBDataException.ToString">
+            <summary> error string </summary>
+        </member>
+        <member name="T:VNC.RFBProtocolHandling.ServerData">
+            <summary> this struct represents the data of a remote framebuffer </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.ServerData.fbWidth">
+            <summary> the width of the framebuffer </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.ServerData.fbHeight">
+            <summary> the height of the framebuffer </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.ServerData.pixForm">
+            <summary> the pixelformat of the framebuffer </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.ServerData.serverName">
+            <summary> the name of the server </summary>
+        </member>
+        <member name="T:VNC.RFBProtocolHandling.PixelFormat">
+            <summary> this struct represents a vnc-pixelformat </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.bitsPerPixel">
+            <summary> the bits used for a pixel in the stream </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.depth">
+            <summary> the depth of this pixelformat e.g. 32bit</summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.bigEndian">
+            <summary> is pixeldata encoded in bigendian format </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.trueColor">
+            <summary> is this pixelformat a truecolor format or only a palette format </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.redMax">
+            <summary> the maximal value the red component can reach </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.greenMax">
+            <summary> the maximal value the green component can reach </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.blueMax">
+            <summary> the maximal value the blue component can reach </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.redShift">
+            <summary> the bit shift needed to accesss the red component </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.greenShift">
+            <summary> the bit shift needed to accesss the greeen component </summary>
+        </member>
+        <member name="F:VNC.RFBProtocolHandling.PixelFormat.blueShift">
+            <summary> the bit shift needed to accesss the blue component </summary>		
+        </member>
+        <member name="T:VNC.RFBProtocolHandling.Authenticate.DESAuthenticatior">
+            <summary>
+            this class implements the authentication with DES in the VNC-Protocol.
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.Authenticate.DESAuthenticatior.encryptChallenge(System.Byte[],System.String)">
+            <summary>
+            this method encrypts the challange sent by the VNC-Server to
+            prove the knowledge of the key
+            </summary>
+        </member>
+        <member name="M:VNC.RFBProtocolHandling.Authenticate.DESAuthenticatior.compensateKeyBug(System.Byte[])">
+            <summary>
+            this method compensates the difference in the vnc DES key usage and
+            the standard DES key usage.
+            </summary>
+        </member>
+        <member name="T:VNC.RFBProtocolHandling.Authenticate.AuthenticationForm">
+            <summary>
+            this class represents a form for entering the password
+            </summary>
+        </member>
+        <member name="T:DrawingSupport.DrawSupport">
+            <summary>
+            the DrawSupport class is the main class used by the RFB-Surface to access the 
+            drawing functionality
+            </summary>
+        </member>
+        <member name="F:DrawingSupport.DrawSupport.format">
+            <summary> the pixelformat of the remote framebuffer</summary>
+        </member>
+        <member name="F:DrawingSupport.DrawSupport.width">
+            <summary> the width of the remote framebuffer</summary>
+        </member>
+        <member name="F:DrawingSupport.DrawSupport.height">
+            <summary> the height of the remote framebuffer</summary>
+        </member>
+        <member name="F:DrawingSupport.DrawSupport.depth">
+            <summary> the depth of the remote framebuffer</summary>
+        </member>
+        <member name="F:DrawingSupport.DrawSupport.views">
+            <summary> the views using this drawsupport instance </summary>
+        </member>
+        <member name="F:DrawingSupport.DrawSupport.disposed">
+            <summary> is dispose already called </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.registerView(VNC.RFBDrawing.RFBView)">
+            <summary> register a view, which this Drawsupport instance draws to. In this step the view is prepared for drawing to it</summary>
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.initalize(System.Drawing.Imaging.PixelFormat,System.Int32,System.Int32,System.Int32)">
+            <summary> initalizies the Drawsupport </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.drawBackBufferToScreen(VNC.RFBDrawing.RFBView,System.Drawing.Rectangle)">
+            <summary> draws the specified region of backbuffer to screen </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.drawBackBufferToScreen(VNC.RFBDrawing.RFBView)">
+            <summary> draws the whole backbuffer to screen </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.getDrawingObject(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> get Drawing object for updating the backbuffer </summary>
+            <param name="x">the x coordinate of the drawing region</param>
+            <param name="y">the y coordinate of the drawing region</param>
+            <param name="width">the width of the drawing region</param>
+            <param name="height">the height of the drawing region</param>			
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.getOffScreenBuffer(System.Int32,System.Int32)">
+            <summary> get an offscreenbuffer with the given dimension </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.copyFromBackBuffer(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> creates an offscreenbuffer with a part of the backbuffer as contents  </summary>		
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.drawingObjectDone(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> called by a drawing-Object to inform drawsupport of a performed update.
+            Should only be called by a drawing-Object created by the getDrawingObject method
+            </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.Dispose">
+            <summary> for freeing resources, call if drawing support object is no longer needed,
+            (is otherwise called during finalization)
+            </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawSupport.Finalize">
+            <summary> finalizer </summary>
+        </member>
+        <member name="T:DrawingSupport.DrawingObject">
+            <summary>
+            provides functionality to draw to a buffer / to the screen.
+            </summary>
+            <remarks>	
+            This class is a general Implementation of DrawingObject, usable with many DrawingSupport classes 	
+            </remarks>	
+        </member>
+        <member name="M:DrawingSupport.DrawingObject.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,DrawingSupport.OffScreenBuffer,DrawingSupport.DrawSupport)">
+            <summary>
+            creates a drawing object, for drawing to a specified region
+            </summary>
+            <remarks>
+            this constructor should only be used from methods/constructors within a drawing-Support class
+            </remarks>
+            <param name="x">the x-coordinate of the top-left corner of the drawing region</param>
+            <param name="y">the y-coordinate of the top-left corner of the drawing region</param>
+            <param name="width">the width of the drawing region</param>
+            <param name="height">the height of the drawing region</param>						
+            <param name="buffer">the backbuffer used during drawing</param>
+            <param name="drawSup">the drawSupport instance used for drawing</param>
+            <seealso cref="T:DrawingSupport.DrawSupport"/>
+        </member>
+        <member name="M:DrawingSupport.DrawingObject.drawFilledRectangle(System.Drawing.Color,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> this methods draws a filled rectangle in the specified color and with
+            the specified size at the specified position 
+            </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawingObject.drawOffScreenBuffer(DrawingSupport.OffScreenBuffer,System.Int32,System.Int32)">
+            <summary> draw from the contents of an offscreen buffer </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawingObject.drawFromByteArray(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32,VNC.RFBDrawing.PixelDecoders.PixelDecoder)">
+            <summary> this methods draws data from a byte array. </summary>
+            <param name="data">the byte array containting the pixel data</param>
+            <param name="width">the width of the pixeldata in pixel</param>
+            <param name="height">the height of the pixeldata in pixel</param>
+            <param name="destX">x-coordinate of the top-left corner of the region, where the pixeldata should be placed to</param>
+            <param name="destY">y-coordinate of the top-left corner of the region, where the pixeldata should be placed to</param>
+            <param name="usedDecoder">the usedDecoder parameter specifies the decoder used to produce data in the byte array, must not be null</param>
+        </member>
+        <member name="M:DrawingSupport.DrawingObject.updateDone">
+            <summary> calling this to tell update is done, forcing the changes made with this
+            drawing object to appear </summary>
+        </member>
+        <member name="P:DrawingSupport.DrawingObject.Width">
+            <summary> the width of the region this drawing object represents </summary>
+        </member>
+        <member name="P:DrawingSupport.DrawingObject.Height">
+            <summary> the height of the region this drawing object represents </summary>		
+        </member>
+        <member name="P:DrawingSupport.DrawingObject.X">
+            <summary> the x-coordinate of the top-left corner of the region this drawing object represents </summary>		
+        </member>
+        <member name="P:DrawingSupport.DrawingObject.Y">
+            <summary> the y-coordinate of the top-left corner of the region this drawing object represents </summary>		
+        </member>
+        <member name="T:DrawingSupport.OffScreenBuffer">
+            <summary>
+            a buffer for buffering bitmap-data
+            </summary>
+        </member>
+        <member name="M:DrawingSupport.OffScreenBuffer.drawFilledRectangle(System.Drawing.Color,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> draw a filled rectangle to the OffscreenBuffer </summary>
+        </member>
+        <member name="M:DrawingSupport.OffScreenBuffer.drawOffScreenBuffer(DrawingSupport.OffScreenBuffer,System.Int32,System.Int32)">
+            <summary> draw the contents of another Offscreenbuffer to the OffscreenBuffer </summary>
+        </member>
+        <member name="M:DrawingSupport.OffScreenBuffer.drawOffScreenBuffer(DrawingSupport.OffScreenBuffer,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> draw the contents of another Offscreenbuffer to the OffscreenBuffer </summary>
+        </member>
+        <member name="M:DrawingSupport.OffScreenBuffer.drawText(System.String,System.Int32,System.Int32,System.Drawing.Font,System.Drawing.Color)">
+            <summary> draw text to the OffScreenBuffer </summary>
+        </member>
+        <member name="M:DrawingSupport.OffScreenBuffer.drawFromByteArray(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32,VNC.RFBDrawing.PixelDecoders.PixelDecoder)">
+            <summary> draw the data from a byte array to the OffScreenBuffer </summary>
+            <param name="data">the byte array containting the pixel data</param>
+            <param name="width">the width of the pixeldata in pixel</param>
+            <param name="height">the height of the pixeldata in pixel</param>
+            <param name="destX">x-coordinate of the top-left corner of the region, where the pixeldata should be placed to</param>
+            <param name="destY">y-coordinate of the top-left corner of the region, where the pixeldata should be placed to</param>
+            <param name="usedDecoder">the usedDecoder parameter specifies the decoder used to produce data, must not be null</param>
+        </member>
+        <member name="M:DrawingSupport.OffScreenBuffer.Dispose">
+            <summary> disposes resources allocated by offscreenbuffer </summary>
+        </member>
+        <member name="P:DrawingSupport.OffScreenBuffer.Width">
+            <summary> the widht of the OffscreenBuffer </summary>
+        </member>
+        <member name="P:DrawingSupport.OffScreenBuffer.Height">
+            <summary> the height of the OffscreenBuffer </summary>		
+        </member>
+        <member name="T:DrawingSupport.DirectXDrawSupport">
+            <summary>
+            this class provides an implmentation of Drawsupport using DirectX
+            </summary>
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.#ctor(System.Drawing.Imaging.PixelFormat,System.Int32,System.Int32,System.Int32,VNC.RFBDrawing.RFBSurface)">
+            <summary> constructor for DirectXDrawSupport </summary>
+            <param name="surface">the RFBSurface using this drawsupport instance for drawing, needed to reget the pixel-data if content DirectDraw surface is lost</param>
+            <param name="format">the pixelformat of the remote framebuffer</param>
+            <param name="width">the width of the remote framebuffer</param>
+            <param name="height">the height of the remote framebuffer</param>
+            <param name="depth"></param>			
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.registerView(VNC.RFBDrawing.RFBView)">
+            <see name="DrawSupport.registerView"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.initalize(System.Drawing.Imaging.PixelFormat,System.Int32,System.Int32,System.Int32)">
+            <see name="DrawSupport.initalize"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.drawBackBufferToScreen(VNC.RFBDrawing.RFBView)">
+            <see name="DrawSupport.drawBackBufferToScreen"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.drawBackBufferToScreen(VNC.RFBDrawing.RFBView,System.Drawing.Rectangle)">
+            <see name="DrawSupport.drawBackBufferToScreen"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.getOffScreenBuffer(System.Int32,System.Int32)">
+            <see name="DrawSupport.getOffScreenBuffer"/> 		
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.copyFromBackBuffer(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="DrawSupport.copyFromBackBuffer"/> 				
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.getDrawingObject(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="DrawSupport.getDrawingObject"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.drawingObjectDone(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="DrawSupport.drawingObjectDone"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXDrawSupport.Dispose">
+            <see name="DrawSupport.Dispose"/> 
+        </member>
+        <member name="T:DrawingSupport.DirectXOffScreenBuffer">
+            <summary>
+            this class provides an implementation of OffScreenBuffer using DirectX 
+            </summary>
+        </member>
+        <member name="M:DrawingSupport.DirectXOffScreenBuffer.#ctor(DirectXLIB.DirectDrawSurface,System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat,System.Int32)">
+            <summary> constructor for DirectXOffScreenBuffer, uses an existing DirectDraw surface to store it's data </summary>
+            <param name="width">the width of the buffer</param>	
+            <param name="height">the height of the buffer</param>
+            <param name="format">the pixelformat for the buffer</param>				
+            <param name="surface">where the data of the offscreenbuffer is located</param>	
+            <param name="depth"></param>
+        </member>
+        <member name="M:DrawingSupport.DirectXOffScreenBuffer.#ctor(System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat,DirectXLIB.DirectDraw,System.Int32)">
+            <summary> constructor for DirectXOffScreenBuffer, creates a DirectDraw surface to store it's data</summary>
+            <param name="width">the width of the buffer</param>	
+            <param name="height">the height of the buffer</param>
+            <param name="format">the pixelformat for the buffer</param>				
+            <param name="ddraw">the direct-draw instance</param>	
+            <param name="depth"></param>				
+        </member>
+        <member name="M:DrawingSupport.DirectXOffScreenBuffer.drawFilledRectangle(System.Drawing.Color,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="OffScreenBuffer.drawFilledRectangle"/> 		
+        </member>
+        <member name="M:DrawingSupport.DirectXOffScreenBuffer.drawOffScreenBuffer(DrawingSupport.OffScreenBuffer,System.Int32,System.Int32)">
+            <see name="OffScreenBuffer.drawOffScreenBuffer"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXOffScreenBuffer.drawOffScreenBuffer(DrawingSupport.OffScreenBuffer,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="OffScreenBuffer.drawOffScreenBuffer"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXOffScreenBuffer.drawFromByteArray(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32,VNC.RFBDrawing.PixelDecoders.PixelDecoder)">
+            <see name="OffScreenBuffer.drawFromByteArray"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXOffScreenBuffer.drawText(System.String,System.Int32,System.Int32,System.Drawing.Font,System.Drawing.Color)">
+            <see name="OffScreenBuffer.drawText"/> 		
+        </member>
+        <member name="M:DrawingSupport.DirectXOffScreenBuffer.Dispose">
+            <see name="OffScreenBuffer.Dispose"/> 
+        </member>
+        <member name="M:DrawingSupport.DirectXOffScreenBuffer.Finalize">
+            <summary> finalizer </summary>
+        </member>
+        <member name="P:DrawingSupport.DirectXOffScreenBuffer.Width">
+            <see name="OffScreenBuffer.Width"/> 
+        </member>
+        <member name="P:DrawingSupport.DirectXOffScreenBuffer.Height">
+            <see name="OffScreenBuffer.Height"/> 		
+        </member>
+        <member name="T:DrawingSupport.DrawDotNetSupport">
+            <summary>
+            an implmentation of Drawsupport using the classes provided by the dotNet-Framework
+            </summary>
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.#ctor(System.Drawing.Imaging.PixelFormat,System.Int32,System.Int32,System.Int32)">
+            <summary> constructor for DrawDotNetSupport </summary>
+            <param name="format">the pixelformat of the remote framebuffer</param>
+            <param name="width">the width of the remote framebuffer</param>
+            <param name="height">the height of the remote framebuffer</param>
+            <param name="depth"></param>
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.registerView(VNC.RFBDrawing.RFBView)">
+            <see name="DrawSupport.registerView"/> 
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.initalize(System.Drawing.Imaging.PixelFormat,System.Int32,System.Int32,System.Int32)">
+            <see name="DrawSupport.initalize"/>
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.drawBackBufferToScreen(VNC.RFBDrawing.RFBView)">
+            <see name="DrawSupport.drawBackBufferToScreen"/>
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.drawBackBufferToScreen(VNC.RFBDrawing.RFBView,System.Drawing.Rectangle)">
+            <see name="DrawSupport.drawBackBufferToScreen"/>
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.getOffScreenBuffer(System.Int32,System.Int32)">
+            <see name="DrawSupport.getOffScreenBuffer"/>		
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.copyFromBackBuffer(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="DrawSupport.copyFromBackBuffer"/>
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.getDrawingObject(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="DrawSupport.getDrawingObject"/>		
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.drawingObjectDone(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="DrawSupport.drawingObjectDone"/>
+        </member>
+        <member name="M:DrawingSupport.DrawDotNetSupport.Dispose">
+            <see name="DrawSupport.Dispose"/>
+        </member>
+        <member name="T:DrawingSupport.DotNetOffScreenBuffer">
+            <summary>
+            An implementation of OffScreenBuffer using the classes provided by the dotNet Framework
+            </summary>
+        </member>
+        <member name="M:DrawingSupport.DotNetOffScreenBuffer.#ctor(System.Drawing.Bitmap,System.Int32)">
+            <summary> constructor for DotNetOffScreenBuffer, uses an existing Bitmap to store it's data </summary>
+            <param name="bitmap">where the data of the offscreenbuffer is located</param>	
+            <param name="depth"></param>
+        </member>
+        <member name="M:DrawingSupport.DotNetOffScreenBuffer.#ctor(System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat,System.Int32)">
+            <summary> constructor for DotNetOffScreenBuffer, creates a new Bitmap to store it's data </summary>
+            <param name="width">the width of the buffer</param>	
+            <param name="height">the height of the buffer</param>
+            <param name="format">the pixelformat for the buffer</param>
+            <param name="depth"></param>
+        </member>
+        <member name="M:DrawingSupport.DotNetOffScreenBuffer.drawFilledRectangle(System.Drawing.Color,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="OffScreenBuffer.drawFilledRectangle"/> 
+        </member>
+        <member name="M:DrawingSupport.DotNetOffScreenBuffer.drawOffScreenBuffer(DrawingSupport.OffScreenBuffer,System.Int32,System.Int32)">
+            <see name="OffScreenBuffer.drawOffScreenBuffer"/> 		
+        </member>
+        <member name="M:DrawingSupport.DotNetOffScreenBuffer.drawOffScreenBuffer(DrawingSupport.OffScreenBuffer,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <see name="OffScreenBuffer.drawOffScreenBuffer"/> 		
+        </member>
+        <member name="M:DrawingSupport.DotNetOffScreenBuffer.drawFromByteArray(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32,VNC.RFBDrawing.PixelDecoders.PixelDecoder)">
+            <see name="OffScreenBuffer.drawFromByteArray"/> 		
+        </member>
+        <member name="M:DrawingSupport.DotNetOffScreenBuffer.drawText(System.String,System.Int32,System.Int32,System.Drawing.Font,System.Drawing.Color)">
+            <see name="OffScreenBuffer.drawText"/> 
+        </member>
+        <member name="M:DrawingSupport.DotNetOffScreenBuffer.Dispose">
+            <see name="OffScreenBuffer.Dispose"/> 		
+        </member>
+        <member name="M:DrawingSupport.DotNetOffScreenBuffer.Finalize">
+            <summary> finalizer </summary>
+        </member>
+        <member name="P:DrawingSupport.DotNetOffScreenBuffer.Width">
+            <see name="OffScreenBuffer.Width"/> 
+        </member>
+        <member name="P:DrawingSupport.DotNetOffScreenBuffer.Height">
+            <see name="OffScreenBuffer.Height"/> 
+        </member>
+        <member name="T:VNC.zlib.InflateStream">
+            <summary> this Stream is responsible to decompress the zlib compressed input from the server </summary>
+        </member>
+        <member name="F:VNC.zlib.InflateStream.stream">
+            <summary> the connection to the server </summary>
+        </member>
+        <member name="F:VNC.zlib.InflateStream.inflator">
+            <summary> the decompressor </summary>
+        </member>
+        <member name="M:VNC.zlib.InflateStream.#ctor(VNC.RFBProtocolHandling.RFBNetworkStream,System.Int32)">
+            <summary> the constructor for an InflateStream </summary>
+            <param name="stream">the underlaying stream</param>
+            <param name="nofCompressedBytes">the number of compressed bytes in the underlaying stream</param>
+        </member>
+        <member name="M:VNC.zlib.InflateStream.#ctor">
+            <summary>
+            a no argument constructor for an Inflate stream, use later setRFBStream to
+            set the underlaying stream
+            </summary>
+        </member>
+        <member name="M:VNC.zlib.InflateStream.setRFBStream(VNC.RFBProtocolHandling.RFBNetworkStream,System.Int32)">
+            <summary> set a compressed connection for decompressing a specified
+            number of bytes from it
+            </summary>
+        </member>
+        <member name="M:VNC.zlib.InflateStream.ReadByte">
+            <summary>
+            with this method a client of this Stream can read a byte out of the stream
+            </summary>
+        </member>
+        <member name="M:VNC.zlib.InflateStream.fillOutputBuffer">
+            <summary> decompress some input </summary>
+        </member>
+        <member name="M:VNC.zlib.InflateStream.fillInputBuffer">
+            <summary> set the input buffer of the decompressor </summary>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.Decoder">
+            <summary> the base class for all Decoders. The decoders decode
+            an encoded bitmap data stream sent during a framebuffer-update
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.Decoder.#ctor">
+            <summary> constructs a decoder </summary>
+            <remarks> before the Decoder is usable, the stream the data should be read from
+            and the pixelDecoder which should be used to decode read pixel Data must be set. Additionally
+            the surface and the PixelDecoder must be set.
+            This is done using the initalize method.
+            Normally this is done by the surface 
+            </remarks>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.Decoder.initalize(VNC.RFBDrawing.RFBSurface,VNC.RFBProtocolHandling.RFBNetworkStream,VNC.RFBDrawing.PixelDecoders.PixelDecoder,DrawingSupport.DrawSupport)">
+            <summary> initalizes this Decoder, only after calling this method the decoder is able to work </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.UpdateDecoders.Decoder.inputBuffer">
+            <summary> the inputBuffer usable to read in raw bitmap data </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.Decoder.decodeRawToByteArray(VNC.RFBProtocolHandling.ReadByteStream,System.UInt16,System.UInt16)">
+            <summary> reads the raw-data into raw-inputbuffer, helper procedure for Decoders </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.Decoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <summary> decodes an update. </summary>
+            <param name="xpos">the x-coordinate of the top-left corner of the update </param>
+            <param name="ypos">the y-coordinate of the top-left corner of the update </param>
+            <param name="width"> the width of the update</param>
+            <param name="height"> the height of the update</param>
+            <remarks> the precondition for calling this method is: the Decode must have been
+            initalized using initalize </remarks>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.Decoder.getEncodingNr">
+            <summary> gets the encoding number this decoder belongs to </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.UpdateDecoders.Decoder.PixelDecoder">
+            <summary> the pixelDecoder used to decode pixelValues </summary>		
+        </member>
+        <member name="P:VNC.RFBDrawing.UpdateDecoders.Decoder.Stream">
+            <summary> the netwrokStream the data is read from </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.UpdateDecoders.Decoder.BufferWidth">
+            <summary> the width of the remote frame buffer </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.UpdateDecoders.Decoder.BufferHeight">
+            <summary> the width of the remote frame buffer </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.UpdateDecoders.Decoder.Surface">
+            <summary> the surface this Decoder is created and used by </summary>
+        </member>
+        <member name="P:VNC.RFBDrawing.UpdateDecoders.Decoder.DrawingSupport">
+            <summary> the DrawSupport instance is used for drawing to the buffer/screen </summary>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.RawDecoder">
+            <summary> this class decodes an update in the RAW-Format </summary>		
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.RawDecoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.RawDecoder.getEncodingNr">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.getEncodingNr"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.HextileDecoder">
+            <summary> this class decodes an update in the Hextile-Format </summary>		
+        </member>
+        <member name="F:VNC.RFBDrawing.UpdateDecoders.HextileDecoder.hextileRaw">
+            <summary> raw subencoding </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.UpdateDecoders.HextileDecoder.hextileBGSpec">
+            <summary> background spec subencoding </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.UpdateDecoders.HextileDecoder.hextileFGSpec">
+            <summary> foreground spec subencoding </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.UpdateDecoders.HextileDecoder.hextileSubRects">
+            <summary> subrects subencoding </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.UpdateDecoders.HextileDecoder.hextileSubRectColor">
+            <summary> colored subrects encoding </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.UpdateDecoders.HextileDecoder.hextileZlibRaw">
+            <summary> new subencoding: hextileZlibRaw (not standard) </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.HextileDecoder.decodeHextileZlibRaw(DrawingSupport.DrawingObject,System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <summary> tells the decoder, how to decode HextileZlibRawSubencoding if supported, only supported in ExtendenHextileDecoder </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.HextileDecoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.StandardHexitleDecoder">
+            <summary> the hextileDecoder as described in the RFBProtocol V3.3 </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.StandardHexitleDecoder.getEncodingNr">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.getEncodingNr"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.ExtendedHexitleDecoder">
+            <summary> an extended version of the HextileDecoder, supporting a subencoding 0x20 for compressing a tile with zlib </summary>
+        </member>
+        <member name="F:VNC.RFBDrawing.UpdateDecoders.ExtendedHexitleDecoder.inflateStream">
+            <summary> zlib decompression </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.ExtendedHexitleDecoder.#ctor">
+            <summary> the standard constructor for an ExtendedHextileDecoder </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.ExtendedHexitleDecoder.decodeHextileZlibRaw(DrawingSupport.DrawingObject,System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.HextileDecoder.decodeHextileZlibRaw(DrawingSupport.DrawingObject,System.UInt16,System.UInt16,System.UInt16,System.UInt16)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.ExtendedHexitleDecoder.getEncodingNr">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.getEncodingNr"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.RREBaseDecoder">
+            <summary> the base class for CoRRE and RRE Decoder </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.RREBaseDecoder.drawRectangle(System.Drawing.Color,DrawingSupport.DrawingObject)">
+            <summary> the difference in the CoRRE and RRE Protocol is in the method to encode a rectangle </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.RREBaseDecoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.RREDecoder">
+            <summary> this class decodes an update in the RRE-Format </summary>		
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.RREDecoder.drawRectangle(System.Drawing.Color,DrawingSupport.DrawingObject)">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.RREBaseDecoder.drawRectangle(System.Drawing.Color,DrawingSupport.DrawingObject)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.RREDecoder.getEncodingNr">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.getEncodingNr"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.CoRREDecoder">
+            <summary> this class decodes an update in the CoRRE-Format </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.CoRREDecoder.drawRectangle(System.Drawing.Color,DrawingSupport.DrawingObject)">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.RREBaseDecoder.drawRectangle(System.Drawing.Color,DrawingSupport.DrawingObject)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.CoRREDecoder.getEncodingNr">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.getEncodingNr"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.CopyRectDecoder">
+            <summary> decodes an update in the copy-rect encoding </summary>	
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.CopyRectDecoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.CopyRectDecoder.getEncodingNr">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.getEncodingNr"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.UpdateDecoders.ZlibEncDecoder">
+            <summary> decodes a zlibCompressed raw update </summary>	
+        </member>
+        <member name="F:VNC.RFBDrawing.UpdateDecoders.ZlibEncDecoder.inflateStream">
+            <summary> zlib decompression </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.ZlibEncDecoder.#ctor">
+            <summary> the standard constructor for a zlibEncDecoder </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.ZlibEncDecoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.decode(System.UInt16,System.UInt16,System.UInt16,System.UInt16)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.UpdateDecoders.ZlibEncDecoder.getEncodingNr">
+            <seealso cref="M:VNC.RFBDrawing.UpdateDecoders.Decoder.getEncodingNr"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.PixelDecoders.PixelDecoder">
+            <summary> The PixelDecoders decode pixeldata read from a stream </summary>
+            <remarks> 
+            subclasses of this class make the update decoders independant of the used Pixelformat
+            (strategy pattern)
+            </remarks>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)">
+            <summary> decodes a pixel value from a stream </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream,System.Byte[],System.Int32,System.Int32,System.Int32)">
+            <summary> decodes a pixel from the Stream stream and stores it in the byte[] buf at the position for pixel PixX, pixY </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.calculateStride(System.Int32)">
+            <summary> returns the stride it uses for encoding to a buffer with bitmap width width </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.getTargetPixelFormat">
+            <summary> returns the format decoded to in decodePixel into buffer </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.getFormatDescription">
+            <summary> the expected stream Format for using decoder </summary>
+        </member>
+        <member name="T:VNC.RFBDrawing.PixelDecoders.Pixel32bitDecoder">
+            <summary>
+            decodes 32bit pixel values
+            </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel32bitDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel32bitDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream,System.Byte[],System.Int32,System.Int32,System.Int32)">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel32bitDecoder.getFormatDescription">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.getFormatDescription"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel32bitDecoder.calculateStride(System.Int32)">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.calculateStride(System.Int32)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel32bitDecoder.getTargetPixelFormat">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.getTargetPixelFormat"/>		
+        </member>
+        <member name="T:VNC.RFBDrawing.PixelDecoders.Pixel24bitDecoder">
+            <summary> a decoder with a 24 bit format, 24 bit used per pixel </summary>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel24bitDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel24bitDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream,System.Byte[],System.Int32,System.Int32,System.Int32)">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)"/>		
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel24bitDecoder.getFormatDescription">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.getFormatDescription"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel24bitDecoder.calculateStride(System.Int32)">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.calculateStride(System.Int32)"/>		
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel24bitDecoder.getTargetPixelFormat">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.getTargetPixelFormat"/>
+        </member>
+        <member name="T:VNC.RFBDrawing.PixelDecoders.Pixel16bitDecoder">
+            <summary> a decoder with a 16 bit format, 16 bit used per pixel </summary>
+            <remarks> The 16 bits of this pixelformat are dived into:
+            red: 5 most significant bits, green 6 bits in the middle, blue 5 least significant bits
+            </remarks>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel16bitDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)"/>
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel16bitDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream,System.Byte[],System.Int32,System.Int32,System.Int32)">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.decodePixel(VNC.RFBProtocolHandling.ReadByteStream)"/>		
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel16bitDecoder.getFormatDescription">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.getFormatDescription"/>		
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel16bitDecoder.calculateStride(System.Int32)">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.calculateStride(System.Int32)"/>		
+        </member>
+        <member name="M:VNC.RFBDrawing.PixelDecoders.Pixel16bitDecoder.getTargetPixelFormat">
+            <see cref="M:VNC.RFBDrawing.PixelDecoders.PixelDecoder.getTargetPixelFormat"/>
+        </member>
+        <member name="T:VNC.Config.VNCConfiguration">
+            <summary>
+            this class reads in, handles and contains the configuration for the VNCClient
+            </summary>
+        </member>
+        <member name="F:VNC.Config.VNCConfiguration.configFile">
+            <summary> the configuration file </summary>
+        </member>
+        <member name="F:VNC.Config.VNCConfiguration.configXSD">
+            <summary> the schema for the configuration file </summary>
+        </member>
+        <member name="M:VNC.Config.VNCConfiguration.#ctor">
+            <summary>
+            reads in the configuration from VNCClient.config.xml and validates 
+            against schemaFile VNCClient.config.xsd
+            </summary>
+        </member>
+        <member name="M:VNC.Config.VNCConfiguration.readConfig">
+            <summary> read in the configuration information </summary>
+        </member>
+        <member name="M:VNC.Config.VNCConfiguration.getDrawType(System.String)">
+            <summary> get a DrawTypes for a drawType as string </summary>
+        </member>
+        <member name="M:VNC.Config.VNCConfiguration.readDecoders(System.Xml.XmlDocument)">
+            <summary> reads in the configured decoders </summary>
+        </member>
+        <member name="M:VNC.Config.VNCConfiguration.validateConfig">
+            <summary> validate the config-Information </summary>
+        </member>
+        <member name="P:VNC.Config.VNCConfiguration.DrawType">
+            <summary> the drawing type: use DirectDraw or pure GDIPlus </summary>
+        </member>
+        <member name="P:VNC.Config.VNCConfiguration.NrOfViews">
+            <summary> the nr of views to display, >1 only supported for GDI+-mode
+            </summary>
+        </member>
+        <member name="P:VNC.Config.VNCConfiguration.Decoders">
+            <summary> the configured decoders </summary>
+        </member>
+        <member name="T:VNC.Config.DrawTypes">
+            <summary> enumeration of the possible draw types </summary>
+        </member>
+        <member name="F:VNC.Config.DrawTypes.DirectDraw">
+            <summary> using DirectDraw for drawing </summary>
+        </member>
+        <member name="F:VNC.Config.DrawTypes.GDIPlus">
+            <summary> using GDIPlus for drawing </summary>
+        </member>
+    </members>
+</doc>

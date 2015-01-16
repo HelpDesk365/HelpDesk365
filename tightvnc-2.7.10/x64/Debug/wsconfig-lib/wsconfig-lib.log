@@ -1,0 +1,38 @@
+﻿Build started 2015-01-14 오후 5:58:44.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\wsconfig-lib\wsconfig-lib.vcxproj" on node 7 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I. /I.. /Zi /nologo /W3 /WX- /Od /Ot /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\vc110.pdb" /Gd /TP /FC /errorReport:prompt AdministrationConfigDialog.cpp ChangePasswordDialog.cpp CommonInputValidation.cpp ConfigDialog.cpp EditIpAccessRuleDialog.cpp EditPortMappingDialog.cpp IpAccessControlDialog.cpp PasswordControl.cpp PortMappingDialog.cpp ServerConfigDialog.cpp TvnLogFilename.cpp UIDataAccess.cpp VideoRegionsConfigDialog.cpp
+         VideoRegionsConfigDialog.cpp
+         UIDataAccess.cpp
+         TvnLogFilename.cpp
+         ServerConfigDialog.cpp
+         PortMappingDialog.cpp
+         PasswordControl.cpp
+         IpAccessControlDialog.cpp
+         EditPortMappingDialog.cpp
+         EditIpAccessRuleDialog.cpp
+         ConfigDialog.cpp
+         CommonInputValidation.cpp
+         ChangePasswordDialog.cpp
+         AdministrationConfigDialog.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib.lib" /NOLOGO /MACHINE:X64 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\AdministrationConfigDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\ChangePasswordDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\CommonInputValidation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\ConfigDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\EditIpAccessRuleDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\EditPortMappingDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\IpAccessControlDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\PasswordControl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\PortMappingDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\ServerConfigDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\TvnLogFilename.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\UIDataAccess.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib\VideoRegionsConfigDialog.obj"
+         wsconfig-lib.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\wsconfig-lib.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\wsconfig-lib\wsconfig-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:24.51

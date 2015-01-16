@@ -1,0 +1,20 @@
+﻿Build started 2015-01-15 오전 3:53:07.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\log-writer\log-writer.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-writer\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-writer\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt FileAccount.cpp FileLogger.cpp LogDump.cpp LogWriter.cpp
+         LogWriter.cpp
+         LogDump.cpp
+         FileLogger.cpp
+         FileAccount.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-writer.lib" /NOLOGO "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-writer\FileAccount.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-writer\FileLogger.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-writer\LogDump.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-writer\LogWriter.obj"
+         log-writer.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\log-writer.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\log-writer\log-writer.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.25

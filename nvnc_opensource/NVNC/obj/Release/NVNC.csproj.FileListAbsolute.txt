@@ -1,0 +1,2 @@
+C:\Users\Administrator\Downloads\nvnc-0b6ed3334c6e\nvnc_0b6ed3334c6e\NVNC\bin\Release\NVNC.dll
+C:\Users\Administrator\Downloads\nvnc-0b6ed3334c6e\nvnc_0b6ed3334c6e\NVNC\obj\Release\NVNC.dll

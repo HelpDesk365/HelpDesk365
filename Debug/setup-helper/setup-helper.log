@@ -1,0 +1,20 @@
+﻿Build started 2015-01-15 오전 3:54:51.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\setup-helper\setup-helper.vcxproj" on node 8 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\setup-helper.dll" /INCREMENTAL /NOLOGO msi.lib shlwapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"CustomAction.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\setup-helper.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\setup-helper.lib" /MACHINE:X86 /SAFESEH /DLL "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\setup-helper\setup-helper.res"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\setup-helper\CustomAction.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\setup-helper\MsiProperties.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\config-lib.lib"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\server-config-lib.lib"
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\thread.lib
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnserver-app.lib"
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\util.lib
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\win-system.lib"
+     1>CustomAction.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library E:\OpenSource\HelpDesk365\HelpDesk365\Debug\setup-helper.lib and object E:\OpenSource\HelpDesk365\HelpDesk365\Debug\setup-helper.exp
+         setup-helper.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\setup-helper.dll
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\setup-helper\setup-helper.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.78

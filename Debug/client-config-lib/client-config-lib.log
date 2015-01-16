@@ -1,0 +1,20 @@
+﻿Build started 2015-01-15 오전 3:44:26.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\client-config-lib\client-config-lib.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\client-config-lib\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\client-config-lib\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ConnectionConfig.cpp ConnectionConfigSM.cpp ViewerConfig.cpp ViewerSettingsManager.cpp
+         ViewerSettingsManager.cpp
+         ViewerConfig.cpp
+         ConnectionConfigSM.cpp
+         ConnectionConfig.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\client-config-lib.lib" /NOLOGO "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\client-config-lib\ConnectionConfig.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\client-config-lib\ConnectionConfigSM.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\client-config-lib\ViewerConfig.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\client-config-lib\ViewerSettingsManager.obj"
+         client-config-lib.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\client-config-lib.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\client-config-lib\client-config-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.73

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+
+<config>
+	<graphics>
+		<drawingType>GDIPlus</drawingType>
+		<nrOfViews>1</nrOfViews>
+	</graphics>
+	<decoders>
+		<decoder>VNC.RFBDrawing.UpdateDecoders.CopyRectDecoder</decoder>
+		<decoder>VNC.RFBDrawing.UpdateDecoders.ExtendedHexitleDecoder</decoder>
+		<decoder>VNC.RFBDrawing.UpdateDecoders.StandardHexitleDecoder</decoder>
+		<decoder>VNC.RFBDrawing.UpdateDecoders.RREDecoder</decoder>
+		<decoder>VNC.RFBDrawing.UpdateDecoders.CoRREDecoder</decoder>
+		<decoder>VNC.RFBDrawing.UpdateDecoders.ZlibEncDecoder</decoder>
+		<decoder>VNC.RFBDrawing.UpdateDecoders.RawDecoder</decoder>
+	</decoders>
+</config>

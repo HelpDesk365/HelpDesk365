@@ -1,0 +1,44 @@
+﻿Build started 2015-01-14 오후 6:17:25.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\server-config-lib.vcxproj" on node 6 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ConfigReloadListener.cpp Configurator.cpp IpAccessControl.cpp IpAccessRule.cpp PortMapping.cpp PortMappingContainer.cpp PortMappingRect.cpp RegistrySecurityAttributes.cpp ServerConfig.cpp
+         ServerConfig.cpp
+         RegistrySecurityAttributes.cpp
+         PortMappingRect.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\portmappingrect.cpp(51): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+         PortMappingContainer.cpp
+         PortMapping.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\portmapping.cpp(105): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+         IpAccessRule.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\ipaccessrule.cpp(67): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\ipaccessrule.cpp(91): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\ipaccessrule.cpp(116): warning C4996: 'swscanf': This function or variable may be unsafe. Consider using swscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(568) : see declaration of 'swscanf'
+         IpAccessControl.cpp
+         Configurator.cpp
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\configurator.cpp(465): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(324) : see declaration of 'wcstok'
+     1>c:\users\administrator\downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\configurator.cpp(474): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(324) : see declaration of 'wcstok'
+         ConfigReloadListener.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib.lib" /NOLOGO "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\ConfigReloadListener.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\Configurator.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\IpAccessControl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\IpAccessRule.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\PortMapping.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\PortMappingContainer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\PortMappingRect.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\RegistrySecurityAttributes.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib\ServerConfig.obj"
+         server-config-lib.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\server-config-lib.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\server-config-lib\server-config-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.66

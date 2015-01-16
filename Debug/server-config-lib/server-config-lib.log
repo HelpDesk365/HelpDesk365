@@ -1,0 +1,9 @@
+﻿Build started 2015-01-15 오전 3:54:05.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\server-config-lib\server-config-lib.vcxproj" on node 7 (Build target(s)).
+     1>Lib:
+         server-config-lib.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\server-config-lib.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\server-config-lib\server-config-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.07

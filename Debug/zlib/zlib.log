@@ -1,0 +1,54 @@
+﻿Build started 2015-01-15 오전 3:54:05.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\zlib\zlib.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt adler32.c compress.c crc32.c deflate.c gzlib.c infback.c inffast.c inflate.c inftrees.c trees.c uncompr.c zutil.c
+         zutil.c
+         uncompr.c
+         trees.c
+         inftrees.c
+         inflate.c
+         inffast.c
+         infback.c
+         gzlib.c
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\zlib\gzlib.c(191): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(554) : see declaration of 'wcstombs'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\zlib\gzlib.c(206): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(554) : see declaration of 'wcstombs'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\zlib\gzlib.c(211): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\zlib\gzlib.c(239): warning C4996: '_wopen': This function or variable may be unsafe. Consider using _wsopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\io.h(275) : see declaration of '_wopen'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\zlib\gzlib.c(239): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _open. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\io.h(315) : see declaration of 'open'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\zlib\gzlib.c(287): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\zlib\gzlib.c(597): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\zlib\gzlib.c(598): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>e:\opensource\helpdesk365\helpdesk365\tightvnc-2.7.10\zlib\gzlib.c(599): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+         deflate.c
+         crc32.c
+         compress.c
+         adler32.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib.lib" /NOLOGO E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\adler32.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\compress.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\crc32.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\deflate.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\gzlib.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\infback.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\inffast.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\inflate.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\inftrees.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\trees.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\uncompr.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib\zutil.obj
+         zlib.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\zlib\zlib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.81

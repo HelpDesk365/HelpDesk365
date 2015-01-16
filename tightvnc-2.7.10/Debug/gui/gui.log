@@ -1,0 +1,90 @@
+﻿Build started 2015-01-14 오후 6:17:04.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\gui\gui.vcxproj" on node 9 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt BalloonTip.cpp BaseDialog.cpp BaseWindow.cpp DibFrameBuffer.cpp drawing\Bitmap.cpp drawing\BitmapGraphics.cpp drawing\Brush.cpp CheckBox.cpp ComboBox.cpp CommonControlsEx.cpp Control.cpp drawing\DeviceContext.cpp FilteredTextBox.cpp drawing\Graphics.cpp drawing\Icon.cpp ImagedButton.cpp ListBox.cpp ListView.cpp Menu.cpp MessageWindow.cpp NotifyIcon.cpp NotifyIconWindow.cpp drawing\Pen.cpp PaintWindow.cpp ProgressBar.cpp drawing\SolidBrush.cpp ScrollBar.cpp SpinControl.cpp StringFilter.cpp Tab.cpp TabControl.cpp TextBox.cpp ThemeLib.cpp ToolBar.cpp Tooltip.cpp Trackbar.cpp WindowFinder.cpp WindowProcHolder.cpp
+         WindowProcHolder.cpp
+         WindowFinder.cpp
+         Trackbar.cpp
+         Tooltip.cpp
+         ToolBar.cpp
+         ThemeLib.cpp
+         TextBox.cpp
+         TabControl.cpp
+         Tab.cpp
+         StringFilter.cpp
+         SpinControl.cpp
+         ScrollBar.cpp
+         SolidBrush.cpp
+         ProgressBar.cpp
+         PaintWindow.cpp
+         Pen.cpp
+         NotifyIconWindow.cpp
+         NotifyIcon.cpp
+         MessageWindow.cpp
+         Menu.cpp
+         Generating Code...
+         Compiling...
+         ListView.cpp
+         ListBox.cpp
+         ImagedButton.cpp
+         Icon.cpp
+         Graphics.cpp
+         FilteredTextBox.cpp
+         DeviceContext.cpp
+         Control.cpp
+         CommonControlsEx.cpp
+         ComboBox.cpp
+         CheckBox.cpp
+         Brush.cpp
+         BitmapGraphics.cpp
+         Bitmap.cpp
+         DibFrameBuffer.cpp
+         BaseWindow.cpp
+         BaseDialog.cpp
+         BalloonTip.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui.lib" /NOLOGO "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\BalloonTip.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\BaseDialog.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\BaseWindow.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\DibFrameBuffer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Bitmap.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\BitmapGraphics.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Brush.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\CheckBox.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\ComboBox.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\CommonControlsEx.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Control.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\DeviceContext.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\FilteredTextBox.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Graphics.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Icon.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\ImagedButton.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\ListBox.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\ListView.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Menu.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\MessageWindow.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\NotifyIcon.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\NotifyIconWindow.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Pen.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\PaintWindow.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\ProgressBar.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\SolidBrush.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\ScrollBar.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\SpinControl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\StringFilter.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Tab.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\TabControl.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\TextBox.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\ThemeLib.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\ToolBar.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Tooltip.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\Trackbar.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\WindowFinder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui\WindowProcHolder.obj"
+         gui.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\gui.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\gui\gui.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:01.46

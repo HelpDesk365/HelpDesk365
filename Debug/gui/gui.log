@@ -1,0 +1,90 @@
+﻿Build started 2015-01-15 오전 3:52:40.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\gui\gui.vcxproj" on node 9 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt BalloonTip.cpp BaseDialog.cpp BaseWindow.cpp DibFrameBuffer.cpp drawing\Bitmap.cpp drawing\BitmapGraphics.cpp drawing\Brush.cpp CheckBox.cpp ComboBox.cpp CommonControlsEx.cpp Control.cpp drawing\DeviceContext.cpp FilteredTextBox.cpp drawing\Graphics.cpp drawing\Icon.cpp ImagedButton.cpp ListBox.cpp ListView.cpp Menu.cpp MessageWindow.cpp NotifyIcon.cpp NotifyIconWindow.cpp drawing\Pen.cpp PaintWindow.cpp ProgressBar.cpp drawing\SolidBrush.cpp ScrollBar.cpp SpinControl.cpp StringFilter.cpp Tab.cpp TabControl.cpp TextBox.cpp ThemeLib.cpp ToolBar.cpp Tooltip.cpp Trackbar.cpp WindowFinder.cpp WindowProcHolder.cpp
+         WindowProcHolder.cpp
+         WindowFinder.cpp
+         Trackbar.cpp
+         Tooltip.cpp
+         ToolBar.cpp
+         ThemeLib.cpp
+         TextBox.cpp
+         TabControl.cpp
+         Tab.cpp
+         StringFilter.cpp
+         SpinControl.cpp
+         ScrollBar.cpp
+         SolidBrush.cpp
+         ProgressBar.cpp
+         PaintWindow.cpp
+         Pen.cpp
+         NotifyIconWindow.cpp
+         NotifyIcon.cpp
+         MessageWindow.cpp
+         Menu.cpp
+         Generating Code...
+         Compiling...
+         ListView.cpp
+         ListBox.cpp
+         ImagedButton.cpp
+         Icon.cpp
+         Graphics.cpp
+         FilteredTextBox.cpp
+         DeviceContext.cpp
+         Control.cpp
+         CommonControlsEx.cpp
+         ComboBox.cpp
+         CheckBox.cpp
+         Brush.cpp
+         BitmapGraphics.cpp
+         Bitmap.cpp
+         DibFrameBuffer.cpp
+         BaseWindow.cpp
+         BaseDialog.cpp
+         BalloonTip.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui.lib" /NOLOGO E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\BalloonTip.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\BaseDialog.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\BaseWindow.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\DibFrameBuffer.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Bitmap.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\BitmapGraphics.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Brush.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\CheckBox.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\ComboBox.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\CommonControlsEx.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Control.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\DeviceContext.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\FilteredTextBox.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Graphics.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Icon.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\ImagedButton.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\ListBox.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\ListView.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Menu.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\MessageWindow.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\NotifyIcon.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\NotifyIconWindow.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Pen.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\PaintWindow.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\ProgressBar.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\SolidBrush.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\ScrollBar.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\SpinControl.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\StringFilter.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Tab.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\TabControl.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\TextBox.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\ThemeLib.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\ToolBar.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Tooltip.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\Trackbar.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\WindowFinder.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui\WindowProcHolder.obj
+         gui.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\gui.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\gui\gui.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:43.33

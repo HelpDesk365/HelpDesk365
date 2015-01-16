@@ -1,0 +1,12 @@
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\bin\Debug\[VB.NET]ThreadTest.exe.config
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\bin\Debug\[VB.NET]ThreadTest.exe
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\bin\Debug\[VB.NET]ThreadTest.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\bin\Debug\[VB.NET]ThreadTest.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\bin\Debug\NVNC.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\bin\Debug\NVNC.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\obj\Debug\[VB.NET]ThreadTest.vbprojResolveAssemblyReference.cache
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\obj\Debug\_VB.NET_ThreadTest.Resources.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\obj\Debug\[VB.NET]ThreadTest.vbproj.GenerateResource.Cache
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\obj\Debug\[VB.NET]ThreadTest.exe
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\obj\Debug\[VB.NET]ThreadTest.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\nvnc_opensource\[VB.NET]ThreadTest\obj\Debug\[VB.NET]ThreadTest.pdb

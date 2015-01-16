@@ -1,0 +1,36 @@
+﻿Build started 2015-01-15 오전 3:52:53.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\rfb\rfb.vcxproj" on node 7 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt AuthDefs.cpp CursorShape.cpp FrameBuffer.cpp HostPath.cpp MsgDefs.cpp PixelFormat.cpp RfbKeySym.cpp StandardPixelFormatFactory.cpp TunnelDefs.cpp VendorDefs.cpp EncodingDefs.cpp PixelConverter.cpp
+         PixelConverter.cpp
+         EncodingDefs.cpp
+         VendorDefs.cpp
+         TunnelDefs.cpp
+         StandardPixelFormatFactory.cpp
+         RfbKeySym.cpp
+         PixelFormat.cpp
+         MsgDefs.cpp
+         HostPath.cpp
+         FrameBuffer.cpp
+         CursorShape.cpp
+         AuthDefs.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb.lib" /NOLOGO E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\AuthDefs.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\CursorShape.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\FrameBuffer.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\HostPath.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\MsgDefs.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\PixelFormat.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\RfbKeySym.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\StandardPixelFormatFactory.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\TunnelDefs.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\VendorDefs.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\EncodingDefs.obj
+         E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb\PixelConverter.obj
+         rfb.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\rfb.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\rfb\rfb.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.68

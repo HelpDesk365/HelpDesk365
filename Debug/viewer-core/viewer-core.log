@@ -1,0 +1,84 @@
+﻿Build started 2015-01-15 오전 3:54:05.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\viewer-core\viewer-core.vcxproj" on node 8 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt AuthHandler.cpp CapabilitiesManager.cpp CapsContainer.cpp CoreEventsAdapter.cpp CursorPainter.cpp DecoderOfRectangle.cpp FbUpdateNotifier.cpp FileTransferCapability.cpp LastRectDecoder.cpp PseudoDecoder.cpp RawDecoder.cpp RemoteViewerCore.cpp RfbClientToServerMessage.cpp RfbCutTextEventClientMessage.cpp RfbFramebufferUpdateRequestClientMessage.cpp RfbKeyEventClientMessage.cpp RfbPointerEventClientMessage.cpp RfbSetEncodingsClientMessage.cpp RfbSetPixelFormatClientMessage.cpp TcpConnection.cpp VncAuthentication.cpp CompressionLevel.cpp CopyRectDecoder.cpp Decoder.cpp DecoderStore.cpp DesktopSizeDecoder.cpp HexTileDecoder.cpp JpegDecompressor.cpp JpegQualityLevel.cpp PointerPosDecoder.cpp RichCursorDecoder.cpp RreDecoder.cpp TightDecoder.cpp VncAuthenticationHandler.cpp ZrleDecoder.cpp
+         ZrleDecoder.cpp
+         VncAuthenticationHandler.cpp
+         TightDecoder.cpp
+         RreDecoder.cpp
+         RichCursorDecoder.cpp
+         PointerPosDecoder.cpp
+         JpegQualityLevel.cpp
+         JpegDecompressor.cpp
+         HexTileDecoder.cpp
+         DesktopSizeDecoder.cpp
+         DecoderStore.cpp
+         Decoder.cpp
+         CopyRectDecoder.cpp
+         CompressionLevel.cpp
+         VncAuthentication.cpp
+         TcpConnection.cpp
+         RfbSetPixelFormatClientMessage.cpp
+         RfbSetEncodingsClientMessage.cpp
+         RfbPointerEventClientMessage.cpp
+         RfbKeyEventClientMessage.cpp
+         Generating Code...
+         Compiling...
+         RfbFramebufferUpdateRequestClientMessage.cpp
+         RfbCutTextEventClientMessage.cpp
+         RfbClientToServerMessage.cpp
+         RemoteViewerCore.cpp
+         RawDecoder.cpp
+         PseudoDecoder.cpp
+         LastRectDecoder.cpp
+         FileTransferCapability.cpp
+         FbUpdateNotifier.cpp
+         DecoderOfRectangle.cpp
+         CursorPainter.cpp
+         CoreEventsAdapter.cpp
+         CapsContainer.cpp
+         CapabilitiesManager.cpp
+         AuthHandler.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core.lib" /NOLOGO "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\AuthHandler.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\CapabilitiesManager.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\CapsContainer.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\CoreEventsAdapter.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\CursorPainter.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\DecoderOfRectangle.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\FbUpdateNotifier.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\FileTransferCapability.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\LastRectDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\PseudoDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RawDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RemoteViewerCore.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RfbClientToServerMessage.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RfbCutTextEventClientMessage.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RfbFramebufferUpdateRequestClientMessage.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RfbKeyEventClientMessage.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RfbPointerEventClientMessage.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RfbSetEncodingsClientMessage.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RfbSetPixelFormatClientMessage.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\TcpConnection.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\VncAuthentication.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\CompressionLevel.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\CopyRectDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\Decoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\DecoderStore.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\DesktopSizeDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\HexTileDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\JpegDecompressor.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\JpegQualityLevel.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\PointerPosDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RichCursorDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\RreDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\TightDecoder.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\VncAuthenticationHandler.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core\ZrleDecoder.obj"
+         viewer-core.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\viewer-core\viewer-core.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:35.79

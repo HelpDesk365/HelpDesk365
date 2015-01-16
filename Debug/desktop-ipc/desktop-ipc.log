@@ -1,0 +1,44 @@
+﻿Build started 2015-01-15 오전 3:52:48.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\desktop-ipc\desktop-ipc.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt BlockingGate.cpp BlockingInputGate.cpp BlockingOutputGate.cpp ClientListener.cpp ConfigServer.cpp DesktopConfigClient.cpp DesktopServerProto.cpp DesktopSrvDispatcher.cpp GateKicker.cpp GateKickHandler.cpp ReconnectException.cpp ReconnectingChannel.cpp UpdateHandlerClient.cpp UpdateHandlerServer.cpp UserInputClient.cpp UserInputServer.cpp
+         UserInputServer.cpp
+         UserInputClient.cpp
+         UpdateHandlerServer.cpp
+         UpdateHandlerClient.cpp
+         ReconnectingChannel.cpp
+         ReconnectException.cpp
+         GateKickHandler.cpp
+         GateKicker.cpp
+         DesktopSrvDispatcher.cpp
+         DesktopServerProto.cpp
+         DesktopConfigClient.cpp
+         ConfigServer.cpp
+         ClientListener.cpp
+         BlockingOutputGate.cpp
+         BlockingInputGate.cpp
+         BlockingGate.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc.lib" /NOLOGO "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\BlockingGate.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\BlockingInputGate.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\BlockingOutputGate.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\ClientListener.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\ConfigServer.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\DesktopConfigClient.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\DesktopServerProto.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\DesktopSrvDispatcher.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\GateKicker.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\GateKickHandler.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\ReconnectException.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\ReconnectingChannel.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\UpdateHandlerClient.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\UpdateHandlerServer.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\UserInputClient.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc\UserInputServer.obj"
+         desktop-ipc.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\desktop-ipc.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\desktop-ipc\desktop-ipc.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:22.81

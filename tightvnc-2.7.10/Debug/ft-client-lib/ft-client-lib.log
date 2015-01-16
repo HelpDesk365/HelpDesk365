@@ -1,0 +1,52 @@
+﻿Build started 2015-01-14 오후 6:17:16.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\ft-client-lib\ft-client-lib.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D __WIN32__ /D _WINSTATIC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CopyOperation.cpp DownloadOperation.cpp FileInfoList.cpp FileTransferCore.cpp FileTransferEventAdapter.cpp FileTransferEventHandler.cpp FileTransferInterface.cpp FileTransferMessageProcessor.cpp FileTransferOperation.cpp FileTransferReplyBuffer.cpp FileTransferRequestSender.cpp LocalFilesDeleteOperation.cpp OperationEventListener.cpp OperationNotPermittedException.cpp OperationSupport.cpp RemoteFileListOperation.cpp RemoteFileRenameOperation.cpp RemoteFilesDeleteOperation.cpp RemoteFolderCreateOperation.cpp UploadOperation.cpp
+         UploadOperation.cpp
+         RemoteFolderCreateOperation.cpp
+         RemoteFilesDeleteOperation.cpp
+         RemoteFileRenameOperation.cpp
+         RemoteFileListOperation.cpp
+         OperationSupport.cpp
+         OperationNotPermittedException.cpp
+         OperationEventListener.cpp
+         LocalFilesDeleteOperation.cpp
+         FileTransferRequestSender.cpp
+         FileTransferReplyBuffer.cpp
+         FileTransferOperation.cpp
+         FileTransferMessageProcessor.cpp
+         FileTransferInterface.cpp
+         FileTransferEventHandler.cpp
+         FileTransferEventAdapter.cpp
+         FileTransferCore.cpp
+         FileInfoList.cpp
+         DownloadOperation.cpp
+         CopyOperation.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib.lib" /NOLOGO /MACHINE:X86 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\CopyOperation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\DownloadOperation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\FileInfoList.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\FileTransferCore.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\FileTransferEventAdapter.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\FileTransferEventHandler.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\FileTransferInterface.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\FileTransferMessageProcessor.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\FileTransferOperation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\FileTransferReplyBuffer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\FileTransferRequestSender.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\LocalFilesDeleteOperation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\OperationEventListener.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\OperationNotPermittedException.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\OperationSupport.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\RemoteFileListOperation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\RemoteFileRenameOperation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\RemoteFilesDeleteOperation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\RemoteFolderCreateOperation.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib\UploadOperation.obj"
+         ft-client-lib.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\Debug\ft-client-lib.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\ft-client-lib\ft-client-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:28.93

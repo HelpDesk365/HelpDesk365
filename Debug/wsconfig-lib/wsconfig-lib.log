@@ -1,0 +1,38 @@
+﻿Build started 2015-01-15 오전 3:54:05.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\wsconfig-lib\wsconfig-lib.vcxproj" on node 6 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I.. /ZI /nologo /W3 /WX- /Od /Ot /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt AdministrationConfigDialog.cpp ChangePasswordDialog.cpp CommonInputValidation.cpp ConfigDialog.cpp EditIpAccessRuleDialog.cpp EditPortMappingDialog.cpp IpAccessControlDialog.cpp PasswordControl.cpp PortMappingDialog.cpp ServerConfigDialog.cpp TvnLogFilename.cpp UIDataAccess.cpp VideoRegionsConfigDialog.cpp
+         VideoRegionsConfigDialog.cpp
+         UIDataAccess.cpp
+         TvnLogFilename.cpp
+         ServerConfigDialog.cpp
+         PortMappingDialog.cpp
+         PasswordControl.cpp
+         IpAccessControlDialog.cpp
+         EditPortMappingDialog.cpp
+         EditIpAccessRuleDialog.cpp
+         ConfigDialog.cpp
+         CommonInputValidation.cpp
+         ChangePasswordDialog.cpp
+         AdministrationConfigDialog.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib.lib" /NOLOGO "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\AdministrationConfigDialog.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\ChangePasswordDialog.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\CommonInputValidation.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\ConfigDialog.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\EditIpAccessRuleDialog.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\EditPortMappingDialog.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\IpAccessControlDialog.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\PasswordControl.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\PortMappingDialog.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\ServerConfigDialog.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\TvnLogFilename.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\UIDataAccess.obj"
+         "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib\VideoRegionsConfigDialog.obj"
+         wsconfig-lib.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\wsconfig-lib.lib
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\wsconfig-lib\wsconfig-lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.94

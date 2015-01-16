@@ -1,0 +1,84 @@
+﻿Build started 2015-01-14 오후 5:59:57.
+     1>Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\viewer-core\viewer-core.vcxproj" on node 5 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I.. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\\" /Fd"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\vc110.pdb" /Gd /TP /errorReport:prompt AuthHandler.cpp CapabilitiesManager.cpp CapsContainer.cpp CoreEventsAdapter.cpp CursorPainter.cpp DecoderOfRectangle.cpp FbUpdateNotifier.cpp FileTransferCapability.cpp LastRectDecoder.cpp PseudoDecoder.cpp RawDecoder.cpp RemoteViewerCore.cpp RfbClientToServerMessage.cpp RfbCutTextEventClientMessage.cpp RfbFramebufferUpdateRequestClientMessage.cpp RfbKeyEventClientMessage.cpp RfbPointerEventClientMessage.cpp RfbSetEncodingsClientMessage.cpp RfbSetPixelFormatClientMessage.cpp TcpConnection.cpp VncAuthentication.cpp CompressionLevel.cpp CopyRectDecoder.cpp Decoder.cpp DecoderStore.cpp DesktopSizeDecoder.cpp HexTileDecoder.cpp JpegDecompressor.cpp JpegQualityLevel.cpp PointerPosDecoder.cpp RichCursorDecoder.cpp RreDecoder.cpp TightDecoder.cpp VncAuthenticationHandler.cpp ZrleDecoder.cpp
+         AuthHandler.cpp
+         CapabilitiesManager.cpp
+         CapsContainer.cpp
+         CoreEventsAdapter.cpp
+         CursorPainter.cpp
+         DecoderOfRectangle.cpp
+         FbUpdateNotifier.cpp
+         FileTransferCapability.cpp
+         LastRectDecoder.cpp
+         PseudoDecoder.cpp
+         RawDecoder.cpp
+         RemoteViewerCore.cpp
+         RfbClientToServerMessage.cpp
+         RfbCutTextEventClientMessage.cpp
+         RfbFramebufferUpdateRequestClientMessage.cpp
+         RfbKeyEventClientMessage.cpp
+         RfbPointerEventClientMessage.cpp
+         RfbSetEncodingsClientMessage.cpp
+         RfbSetPixelFormatClientMessage.cpp
+         TcpConnection.cpp
+         Generating Code...
+         Compiling...
+         VncAuthentication.cpp
+         CompressionLevel.cpp
+         CopyRectDecoder.cpp
+         Decoder.cpp
+         DecoderStore.cpp
+         DesktopSizeDecoder.cpp
+         HexTileDecoder.cpp
+         JpegDecompressor.cpp
+         JpegQualityLevel.cpp
+         PointerPosDecoder.cpp
+         RichCursorDecoder.cpp
+         RreDecoder.cpp
+         TightDecoder.cpp
+         VncAuthenticationHandler.cpp
+         ZrleDecoder.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core.lib" /NOLOGO /MACHINE:X64 "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\AuthHandler.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\CapabilitiesManager.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\CapsContainer.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\CoreEventsAdapter.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\CursorPainter.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\DecoderOfRectangle.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\FbUpdateNotifier.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\FileTransferCapability.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\LastRectDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\PseudoDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RawDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RemoteViewerCore.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RfbClientToServerMessage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RfbCutTextEventClientMessage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RfbFramebufferUpdateRequestClientMessage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RfbKeyEventClientMessage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RfbPointerEventClientMessage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RfbSetEncodingsClientMessage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RfbSetPixelFormatClientMessage.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\TcpConnection.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\VncAuthentication.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\CompressionLevel.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\CopyRectDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\Decoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\DecoderStore.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\DesktopSizeDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\HexTileDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\JpegDecompressor.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\JpegQualityLevel.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\PointerPosDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RichCursorDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\RreDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\TightDecoder.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\VncAuthenticationHandler.obj"
+         "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core\ZrleDecoder.obj"
+         viewer-core.vcxproj -> C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\x64\Debug\viewer-core.lib
+     1>Done Building Project "C:\Users\Administrator\Downloads\tightvnc-2.7.10-src\tightvnc-2.7.10\viewer-core\viewer-core.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:30.86

@@ -1,0 +1,5 @@
+C:\Users\Administrator\Downloads\nvnc-0b6ed3334c6e\nvnc_0b6ed3334c6e\NVNC\obj\Debug\NVNC.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\nvnc-0b6ed3334c6e\nvnc_0b6ed3334c6e\NVNC\bin\Debug\NVNC.dll
+C:\Users\Administrator\Downloads\nvnc-0b6ed3334c6e\nvnc_0b6ed3334c6e\NVNC\bin\Debug\NVNC.pdb
+C:\Users\Administrator\Downloads\nvnc-0b6ed3334c6e\nvnc_0b6ed3334c6e\NVNC\obj\Debug\NVNC.dll
+C:\Users\Administrator\Downloads\nvnc-0b6ed3334c6e\nvnc_0b6ed3334c6e\NVNC\obj\Debug\NVNC.pdb
