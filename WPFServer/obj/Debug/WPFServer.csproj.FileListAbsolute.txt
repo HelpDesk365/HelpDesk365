@@ -29,3 +29,34 @@ C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WPFServer\
 C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WPFServer\obj\Debug\WPFServer.csproj.GenerateResource.Cache
 C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WPFServer\obj\Debug\WPFServer.exe
 C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WPFServer\obj\Debug\WPFServer.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\WPFServer.exe.config
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\WPFServer.exe
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\WPFServer.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Cors.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Diagnostics.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Hosting.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Security.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Newtonsoft.Json.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Owin.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\System.Web.Cors.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Cors.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Diagnostics.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Hosting.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Microsoft.Owin.Security.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\bin\Debug\Newtonsoft.Json.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\WPFServer.csprojResolveAssemblyReference.cache
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\MainWindow.baml
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\MainWindow.g.cs
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\App.g.cs
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\WPFServer_MarkupCompile.cache
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\WPFServer.g.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\WPFServer.Properties.Resources.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\WPFServer.csproj.GenerateResource.Cache
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\WPFServer.exe
+E:\OpenSource\HelpDesk365\HelpDesk365\WPFServer\obj\Debug\WPFServer.pdb

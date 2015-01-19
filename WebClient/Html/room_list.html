@@ -1,3 +1,4 @@
+
 <!DOCTYPE html> 
 <html>
 	<head> 
@@ -5,9 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title> 
-	<link href="assets/css/style.css" rel="stylesheet">
-	<script src="assets/js/jquery-1.11.2.min.js"></script>
-	<script src="assets/js/common.js"></script>
+	<link href="/Assets/css/style.css" rel="stylesheet">
+		<script src="/Assets/js/jquery-1.11.2.min.js"></script>
+	<script src="/Assets/js/common.js"></script>    
+    <!--Reference the SignalR library. -->
+    <script src="/Assets/js/jquery.signalR-2.1.2.min.js"></script>
+    <script src="http://localhost:8080/signalr/hubs"></script>
+    <script type="text/javascript">
+        function fn_goChat(categoryCd) {
+            var nickName = $('#nickName').val();
+            if (nickName == '') {
+                alert('대화명을 입력해 주세요.');
+                return;
+            }
+            location.href = "chat.html?nickName=" + $('#nickName').val() + '&categoryCd=' + categoryCd;
+        }
+    </script>
 </head>
 <body>
 <header id="header">
@@ -32,7 +46,7 @@
 			<i class="icon-state">가능</i>
 		</a>
 	</li>
-	<li class="wait">
+	<!--<li class="wait">
 		<a href="#">
 			<span class="room-name">기술지원센터</span>
 			<span class="room-info">학습 오류 및 장애 신고</span>
@@ -87,12 +101,25 @@
 			<span class="room-info">학습 오류 및 장애 신고 학습 오류 및 장애 신고 학습 오류 및 장애 신고</span>
 			<i class="icon-state">불가</i>
 		</a>
-	</li>
+	</li>-->
 </ul>
 
 
 
 
+<div id="modalChatReady" class="modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="input-guest-name">
+				<input type="text" id="nickName" placeholder="대화명을 입력해주세요" style="width:98%;">
+			</div>
+			<div class="footer">
+				<button type="button" class="btn btn-primary" onclick="fn_goChat('');">온라인 상담 시작하기</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">취소하기</button>
+			</div>
+		</div>
+	</div>
+</div>
 <div id="modalChatWait" class="modal">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -121,14 +148,17 @@
 </div>
 
 <script>
-$(function(){
-	$('.chat-room-list .wait a').click(function(){
-		$('#modalChatWait').modal({show:true});
-	});
-	$('.chat-room-list .off a').click(function(){
-		$('#modalChatOff').modal({show:true});
-	});
-});
+    $(function () {
+        $('.chat-room-list .ready a').click(function () {
+            $('#modalChatReady').modal({ show: true });
+        });
+        $('.chat-room-list .wait a').click(function () {
+            $('#modalChatWait').modal({ show: true });
+        });
+        $('.chat-room-list .off a').click(function () {
+            $('#modalChatOff').modal({ show: true });
+        });
+    });
 </script>
 
 </body>

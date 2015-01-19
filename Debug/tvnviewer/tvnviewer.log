@@ -1,42 +1,7 @@
-﻿Build started 2015-01-15 오전 3:54:51.
-     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\tvnviewer\tvnviewer.vcxproj" on node 7 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer\\" /Fd"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt AboutDialog.cpp AuthenticationDialog.cpp BuildTime.cpp ConfigurationDialog.cpp ConnectionData.cpp ConnectionListener.cpp ControlTrayIcon.cpp DesktopWindow.cpp FileExistDialog.cpp FileInfoListView.cpp FileRenameDialog.cpp FileTransferMainDialog.cpp FsWarningDialog.cpp HelpDialog.cpp LoginDialog.cpp main.cpp NamingDefs.cpp NewFolderDialog.cpp OptionsDialog.cpp ResourceStrings.cpp ScaleManager.cpp TvnViewer.cpp ViewerCmdLine.cpp ViewerCollector.cpp ViewerInstance.cpp ViewerMenu.cpp ViewerVncAuthHandler.cpp ViewerWindow.cpp
-         ViewerWindow.cpp
-         ViewerVncAuthHandler.cpp
-         ViewerMenu.cpp
-         ViewerInstance.cpp
-         ViewerCollector.cpp
-         ViewerCmdLine.cpp
-         TvnViewer.cpp
-         ScaleManager.cpp
-         ResourceStrings.cpp
-         OptionsDialog.cpp
-         NewFolderDialog.cpp
-         NamingDefs.cpp
-         main.cpp
-         LoginDialog.cpp
-         HelpDialog.cpp
-         FsWarningDialog.cpp
-         FileTransferMainDialog.cpp
-         FileRenameDialog.cpp
-         FileInfoListView.cpp
-         FileExistDialog.cpp
-         Generating Code...
-         Compiling...
-         DesktopWindow.cpp
-         ControlTrayIcon.cpp
-         ConnectionListener.cpp
-         ConnectionData.cpp
-         ConfigurationDialog.cpp
-         BuildTime.cpp
-         AuthenticationDialog.cpp
-         AboutDialog.cpp
-         Generating Code...
-       ResourceCompile:
-         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer\tvnviewer.res" tvnviewer.rc 
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer.exe" /NOLOGO comctl32.lib "E:\OpenSource\HelpDesk365\HelpDesk365\libjpeg-turbo\jpeg-static.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTDEPENDENCY:"type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='6595b64144ccf1df' language='*'" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer.lib" /MACHINE:X86 /SAFESEH E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer\tvnviewer.res
+﻿Build started 2015-01-16 오후 4:55:25.
+     1>Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\tvnviewer\tvnviewer.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer.exe" /NOLOGO comctl32.lib "E:\OpenSource\HelpDesk365\HelpDesk365\\tightvnc-2.7.10\libjpeg-turbo\jpeg-static.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTDEPENDENCY:"type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='6595b64144ccf1df' language='*'" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer.lib" /MACHINE:X86 /SAFESEH E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer\tvnviewer.res
          E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer\AboutDialog.obj
          E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer\AuthenticationDialog.obj
          E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer\BuildTime.obj
@@ -81,9 +46,12 @@
          "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\viewer-core.lib"
          "E:\OpenSource\HelpDesk365\HelpDesk365\Debug\win-system.lib"
          E:\OpenSource\HelpDesk365\HelpDesk365\Debug\zlib.lib
-     1>LINK : fatal error LNK1104: cannot open file 'E:\OpenSource\HelpDesk365\HelpDesk365\libjpeg-turbo\jpeg-static.lib'
-     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\tvnviewer\tvnviewer.vcxproj" (Build target(s)) -- FAILED.
+         LINK : E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer.exe not found or not built by the last incremental link; performing full link
+     1>AboutDialog.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     1>libcpmtd.lib(xdebug.obj) : warning LNK4098: defaultlib 'libcmt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+         tvnviewer.vcxproj -> E:\OpenSource\HelpDesk365\HelpDesk365\Debug\tvnviewer.exe
+     1>Done Building Project "E:\OpenSource\HelpDesk365\HelpDesk365\tightvnc-2.7.10\tvnviewer\tvnviewer.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:28.12
+Time Elapsed 00:00:08.46

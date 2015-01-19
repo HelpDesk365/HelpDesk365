@@ -5,7 +5,7 @@
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {font-family:sans-serif; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
-body {margin:0; font-family:'맑은 고딕','malgun gothic',sans-serif;}
+body {margin:0; font-family:'留묒� 怨좊뵓','malgun gothic',sans-serif;}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display:block;}
 audio, canvas, progress, video {display:inline-block; vertical-align:baseline;}
 audio:not([controls]) {display:none; height:0;}
@@ -52,7 +52,6 @@ html,body {height:100%; background-color:#272530;}
 
 .text-center {text-align:center;}
 
-
 .btn {display:inline-block; padding:6px 12px; margin-bottom:0; font-size:14px; font-weight:normal; line-height:1.42857143; text-align:center; white-space:nowrap; vertical-align:middle; cursor:pointer; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; background-image:none; border:1px solid transparent; border-radius:4px;}
 .btn:focus,
 .btn:active:focus,
@@ -79,11 +78,38 @@ fieldset[disabled] .btn {pointer-events:none; cursor:not-allowed; filter:alpha(o
 .btn-primary:active,
 .btn-primary.active {background-image:none;}
 
-
 .btn-lg {padding:10px 16px; font-size:18px; line-height:1.33; border-radius:6px;}
 .btn-sm {padding:5px 10px; font-size:12px; line-height:1.5; border-radius:3px;}
 .btn-xs {padding:1px 5px; font-size:12px; line-height:1.5; border-radius:3px;}
 .btn-block {display:block; width:100%; padding-right:0; padding-left:0;}
+
+select{
+height:30px;
+padding:4px 5px;
+font-size:12px;
+line-height:1.42857143;
+color:#555;
+background-color:#fff;
+background-image:none;
+border:1px solid #ccc;
+border-radius:3px;
+vertical-align:middle;
+}
+
+input[type="text"],
+.form-control {
+height:24px;
+padding:4px 6px;
+line-height:1.42857143;
+color:#555;
+background-color:#fff;
+background-image:none;
+border:1px solid #ccc;
+border-radius:3px;
+vertical-align:middle;
+}
+input[type="radio"],
+input[type="checkbox"] {vertical-align:middle;}
 
 .modal-backdrop {display:none; position: fixed; top:0; left:0; width:100%; height:100%; background:#000; z-index:999; -webkit-transition:all .2s ease-in-out; transition:all .2s ease-in-out; opacity:.60; filter:alpha(opacity=60);}
 .modal-open {overflow:hidden;}
@@ -95,6 +121,7 @@ fieldset[disabled] .btn {pointer-events:none; cursor:not-allowed; filter:alpha(o
 .modal-content .header {margin-bottom:20px;}
 .modal-content .header h4 {margin:0; font-size:18px; color:#252525; font-weight:bold;}
 .modal-content .footer {text-align:center;}
+.input-guest-name {margin-bottom:10px; text-align:center;}
 @media (min-width: 768px) {
 	.modal-dialog {width:600px; margin:30px auto;}
 	.modal-sm {width:300px;}

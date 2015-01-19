@@ -122,6 +122,7 @@ namespace SignalRChat
         public bool IsAvailable { get; set; }
         public List<Client> Clients { get; set; }
         public string AgentId { get; set; }
+        public string CategoryCd { get; set; }
     }
 
     public class Client
@@ -215,9 +216,9 @@ namespace SignalRChat
             }
             Clients.Clients(new string[] { clientId }).changeGroupName(target);
         }
-        public void FindGroup(string name)
+        public void FindGroup(string name, string categoryCd)
         {
-            var group = groupList.Where(d => d.IsAvailable).FirstOrDefault();
+            var group = groupList.Where(d => d.IsAvailable && d.CategoryCd == categoryCd).FirstOrDefault();
             if (group != null)
             {
                 group.IsAvailable = false;
