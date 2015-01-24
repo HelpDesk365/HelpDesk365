@@ -42,6 +42,7 @@
             this.UserNameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.btnClose = new System.Windows.Forms.Button();
             this.ChatPanel.SuspendLayout();
             this.SignInPanel.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +77,7 @@
             // 
             // ChatPanel
             // 
+            this.ChatPanel.Controls.Add(this.btnClose);
             this.ChatPanel.Controls.Add(this.comboBox1);
             this.ChatPanel.Controls.Add(this.btnSessionTranser);
             this.ChatPanel.Controls.Add(this.RichTextBoxConsole);
@@ -164,6 +166,17 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.Enabled = false;
+            this.btnClose.Location = new System.Drawing.Point(311, 37);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(87, 21);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Text = "CloseSession";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // WinFormsClient
             // 
             this.AcceptButton = this.ButtonSend;
@@ -201,6 +214,7 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Button btnSessionTranser;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnClose;
 
     }
 }

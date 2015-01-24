@@ -69,6 +69,13 @@ namespace WinFormsClient
                 }
                 ))
             );
+            HubProxy.On<string>("SessionTranserMessage", (message) => 
+                this.Invoke((Action)(() =>
+                {
+                    MessageBox.Show(message);
+                }
+                ))
+            );
             HubProxy.On<string>("JoinMessage", (name) =>
                 
                 this.Invoke((Action)(() =>{
@@ -99,7 +106,7 @@ namespace WinFormsClient
             try
             {
                 await Connection.Start().ContinueWith(d => {
-                    HubProxy.Invoke("JoinGroup", UserName, UserName);
+                    HubProxy.Invoke("CreateGroup", UserName, UserName,"");
                 });
                 
             }
@@ -191,6 +198,11 @@ namespace WinFormsClient
         private void comboBox1_Click(object sender, EventArgs e)
         {
             HubProxy.Invoke("GetGroupList");
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            HubProxy.Invoke("Send", UserName, TextBoxMessage.Text, UserName);
         }
     }
 }

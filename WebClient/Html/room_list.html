@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html> 
 <html>
 	<head> 
@@ -19,8 +19,19 @@
                 alert('대화명을 입력해 주세요.');
                 return;
             }
-            location.href = "chat.html?nickName=" + $('#nickName').val() + '&categoryCd=' + categoryCd;
+            location.href = "chat.html?nickName=" + $('#nickName').val() + '&categoryCd=' + categoryCd+'&cid='+guid();
         }
+        var guid = (function () {
+            function s4() {
+                return Math.floor((1 + Math.random()) * 0x10000)
+                           .toString(16)
+                           .substring(1);
+            }
+            return function () {
+                return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                       s4() + '-' + s4() + s4() + s4();
+            };
+        })();
     </script>
 </head>
 <body>

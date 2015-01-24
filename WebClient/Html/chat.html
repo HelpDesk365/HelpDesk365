@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html> 
 <html>
 	<head> 
@@ -17,6 +17,8 @@
        
         $(function () {
             var nickName = getQueryParameter("nickName");
+            var categoryCd = getQueryParameter("categoryCd");
+            var clientId = getQueryParameter("cid");
             var group = '';
             //Set the hubs URL for the connection
             $.connection.hub.url = "http://localhost:8080/signalr";
@@ -59,12 +61,13 @@
                 group = groupName;
             }
             
+            
             // Set initial focus to message input box.
             $('#message').focus();
 
             // Start the connection.
             $.connection.hub.start().done(function () {
-                chat.server.findGroup(group);
+                chat.server.findGroup(nickName, clientId,categoryCd);
                 $('#sendmessage').click(function (e) {
                     e.preventDefault();
                     // Call the Send method on the hub.

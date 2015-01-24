@@ -129,7 +129,9 @@ namespace SignalRChat
     {
         public string ClientId { get; set; }
         public string ClientName { get; set; }
+        public string Guid { get; set; }
     }
+    
     /// <summary>
     /// Echoes messages sent using the Send message by calling the
     /// addMessage method on the client. Also reports to the console
@@ -153,6 +155,12 @@ namespace SignalRChat
             Program.MainForm.WriteToConsole("Client connected: " + Context.ConnectionId);
             return base.OnConnected();
         }
+
+        public override Task OnReconnected()
+        {
+            Program.MainForm.WriteToConsole("Client Reconnected: " + Context.ConnectionId);
+            return base.OnReconnected();
+        }
         public override Task OnDisconnected()
         {
             var client = groupList.FirstOrDefault(d => d.Clients.Count(o => o.ClientId == Context.ConnectionId) > 0);
@@ -160,12 +168,12 @@ namespace SignalRChat
 
             if (client != null)
             {
-                client.IsAvailable = true;
-                if (client.Clients.Count > 0)
-                {
-                    client.Clients.RemoveAt(0);
-                    LeaveGroup(client.Clients[0].ClientName, client.Name);
-                }
+                //client.IsAvailable = true;
+                //if (client.Clients.Count > 0)
+                //{
+                //    client.Clients.RemoveAt(0);
+                //    LeaveGroup(client.Clients[0].ClientName, client.Name);
+                //}
                 Groups.Remove(Context.ConnectionId, client.Name);
             }
 
@@ -178,7 +186,7 @@ namespace SignalRChat
             Program.MainForm.WriteToConsole("Client disconnected: " + Context.ConnectionId);
             return base.OnDisconnected();
         }
-        public void Join(string name, string groupName)
+        public void JoinGroup(string name, string groupName)
         {
 
             Clients.Group(groupName).joinMessage(name, String.Format("Join : {0}", name));
@@ -188,51 +196,84 @@ namespace SignalRChat
         {
             Clients.Caller.getGroupList(groupList.Select(d => d.Name).ToList());
         }
+        public enum TransferMessage { 
+            Available
+            ,NotAvaliable
+    }
+        public void SessionTranserMessage(string message)
+        {
+            Clients.Caller.sessionTranserMessage(message);
+        }
 
         public void SessionTransfer(string source, string target)
         {
             var sourceGroup = groupList.FirstOrDefault(d => d.Name == source);
-            var clientId = String.Empty;
+            
             if (sourceGroup != null)
             {
-                var targetGroup = groupList.FirstOrDefault(d => d.Name == target);
-                Client client = sourceGroup.Clients.FirstOrDefault();
-                if (client == null)
+                var targetGroup = groupList.FirstOrDefault(d => d.Name == target && d.IsAvailable);
+                if (targetGroup == null)
                 {
+                    SessionTranserMessage("현재 해당 상담원은 상담중입니다.");
                     return;
                 }
-                clientId = client.ClientId;
-                Groups.Remove(clientId, source);
-                Groups.Add(clientId, target);
-                Join(client.ClientName, target);
-
-                if (targetGroup != null)
+                else 
                 {
-                    targetGroup.IsAvailable = false;
-                    targetGroup.Clients.Add(client);
-                }
-                sourceGroup.IsAvailable = true;
-                sourceGroup.Clients.Remove(client);
+                    List<string> clientIdes = new List<string>();
+
+                    foreach (var client in sourceGroup.Clients)
+                    {
+                        clientIdes.Add(client.ClientId);
+                        var clientId = String.Empty;
+                        clientId = client.ClientId;
+                        Groups.Remove(clientId, source);
+                        Groups.Add(clientId, target);
+                        JoinGroup(client.ClientName, target);
+                       
+                        targetGroup.IsAvailable = false;
+                        targetGroup.Clients.Add(client);                        
+                                          
+                    }
+                    sourceGroup.IsAvailable = true;
+                    sourceGroup.Clients = new List<Client>();
+                    if (clientIdes.Count() > 0)
+                    {
+                        Clients.Clients(clientIdes).changeGroupName(target);
+                    }
+                }     
             }
-            Clients.Clients(new string[] { clientId }).changeGroupName(target);
+           
         }
-        public void FindGroup(string name, string categoryCd)
+        public void FindGroup(string name, string guid, string categoryCd)
         {
-            var group = groupList.Where(d => d.IsAvailable && d.CategoryCd == categoryCd).FirstOrDefault();
+            var reGroup = groupList.FirstOrDefault(d => d.Clients.Count(c => c.Guid == guid) > 0);
+            if (reGroup != null)
+	        {
+                Clients.Caller.findedGroup(reGroup.Name);
+                Groups.Add(Context.ConnectionId, reGroup.Name);
+                reGroup.Clients.Add(new Client {
+                    ClientId = Context.ConnectionId,
+                    ClientName = name,
+                    Guid = guid
+                });
+                return;
+            }
+            var group = groupList.Where(d => d.IsAvailable && d.CategoryCd == categoryCd ).FirstOrDefault();
             if (group != null)
             {
-                group.IsAvailable = false;
+                group.IsAvailable = false;                
                 group.Clients.Add(new Client
                 {
                     ClientId = Context.ConnectionId,
-                    ClientName = name
+                    ClientName = name,
+                    Guid = guid
                 });
                 Groups.Add(Context.ConnectionId, group.Name);
             }
             Clients.Caller.findedGroup(group == null ? "" : group.Name);
         }
 
-        public Task JoinGroup(string name, string groupName)
+        public Task CreateGroup(string name, string groupName, string categoryCd)
         {
             var group = groupList.Where(d => d.Name.Equals(groupName, StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
             if (group == null)
@@ -242,6 +283,7 @@ namespace SignalRChat
                     IsAvailable = true,
                     Name = groupName,
                     Clients = new List<Client>(),
+                    CategoryCd ="",
                     AgentId = Context.ConnectionId
                 });
 
@@ -253,6 +295,12 @@ namespace SignalRChat
         public void LeaveGroup(string name, string groupName)
         {
             Clients.Group(groupName).leaveMessage(name);
+        }
+
+        public void DisconnectClient(string groupName)
+        {
+            var group = groupList.FirstOrDefault(d=>d.Name == groupName);
+            Clients.Group(group.Name).addMessage(group.Clients.Select(c=>c.ClientName).FirstOrDefault(), "접속을 끊었습니다.");
         }
 
     }
