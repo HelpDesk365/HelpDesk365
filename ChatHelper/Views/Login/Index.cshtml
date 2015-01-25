@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btnLogin').click(function (e) {
+            e.preventDefault();
+            var data = $('#form_submit').serialize();
+            $.post('/Login/Login', data, function (result) {
+                if (result == 'Ok') {
+                    location.href = '/Chat/Index';
+                }              
+                else if (result == "Eamil")
+                {
+                    alert('Email과 password를 확인해 주세요.')
+                }
+            });
+            
+        });        
+    });
+</script>
+<div class="login">
+    <div class="body">
+        <form method="post" id="form_submit">
+            <div><i class="fa fa-user"></i><input type="text" placeholder="Email" name="email" required></div>
+            <div><i class="fa fa-lock"></i><input type="password" placeholder="Password" name="password" required></div>
+            <div><button type="submit" id="btnLogin">로그인</button></div>
+        </form>
+    </div>
+</div>

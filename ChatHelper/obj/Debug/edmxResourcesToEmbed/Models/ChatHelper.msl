@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ChatHelperModelStoreContainer" CdmEntityContainer="ChatHelperEntities">
+    <EntitySetMapping Name="tb_user_info">
+      <EntityTypeMapping TypeName="ChatHelperModel.tb_user_info">
+        <MappingFragment StoreEntitySet="tb_user_info">
+          <ScalarProperty Name="company_nm" ColumnName="company_nm" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="company_seq" ColumnName="company_seq" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="guid" ColumnName="guid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

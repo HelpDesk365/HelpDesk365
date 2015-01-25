@@ -1,0 +1,38 @@
+﻿<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btnSubmit').click(function (e) {
+            e.preventDefault();
+            fn_submit();
+        });
+    });
+    function fn_submit()
+    {
+        var data = $('#submit_form').serialize();
+        $.post('/User/SignUp', data, function (result) {
+            if (result == 'Ok') {
+                alert('등록 되었습니다.');
+                location.href = '/Login/Index';
+            }
+            else if (result == 'Exist') {
+                alert('이미 등록된 Email 입니다.');
+            }
+            else {
+                alert('등록에 실패하였습니다. \n관리자이게 문의해주세요.');
+            }
+            
+        });
+
+    }
+</script>
+
+<div class="signup">
+    <div class="body">
+        <form id="submit_form">
+            <div><i class="fa fa-user"></i><input type="text" placeholder="Name" name="name" required></div>
+            <div><i class="fa fa-building"></i><input type="text" placeholder="Company" name="compnay_nm" required></div>
+            <div><i class="fa fa-envelope"></i><input type="text" placeholder="Email" name="email" required></div>
+            <div><i class="fa fa-lock"></i><input type="password" placeholder="Password" name="password" required></div>
+            <div><button type="submit" id="btnSubmit">회원가입</button></div>
+        </form>
+    </div>
+</div>
