@@ -40,6 +40,21 @@ E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClien
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.Properties.Resources.resources
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.csproj.GenerateResource.Cache
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\bin\Debug\WinFormsClient.exe.config
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.exe
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.pdb
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\bin\Debug\WinFormsClient.exe
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\bin\Debug\WinFormsClient.pdb
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\bin\Debug\Newtonsoft.Json.dll
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\bin\Debug\Newtonsoft.Json.xml
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.csprojResolveAssemblyReference.cache
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.WinFormsClient.resources
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.Properties.Resources.resources
+D:\wwwrootTest\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.csproj.GenerateResource.Cache
+=======
 E:\HelpDesk365\WindowsFormsClient\bin\Debug\WinFormsClient.exe.config
 E:\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.exe
 E:\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.pdb
@@ -53,3 +68,4 @@ E:\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.csprojResolveAssembly
 E:\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.WinFormsClient.resources
 E:\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.Properties.Resources.resources
 E:\HelpDesk365\WindowsFormsClient\obj\Debug\WinFormsClient.csproj.GenerateResource.Cache
+>>>>>>> origin/master

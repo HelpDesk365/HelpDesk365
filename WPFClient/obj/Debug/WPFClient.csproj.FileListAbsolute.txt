@@ -18,3 +18,20 @@ C:\Users\Administrator\Downloads\Using SignalR in WinForms and WPF\C#\WPFClient\
 C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WPFClient\bin\Debug\WPFClient.exe.config
 C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WPFClient\obj\Debug\WPFClient.exe
 C:\Users\Administrator\Desktop\어플리케이션\Using SignalR in WinForms and WPF\C#\WPFClient\obj\Debug\WPFClient.pdb
+D:\wwwrootTest\HelpDesk365\WPFClient\bin\Debug\WPFClient.exe.config
+D:\wwwrootTest\HelpDesk365\WPFClient\bin\Debug\WPFClient.exe
+D:\wwwrootTest\HelpDesk365\WPFClient\bin\Debug\WPFClient.pdb
+D:\wwwrootTest\HelpDesk365\WPFClient\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\wwwrootTest\HelpDesk365\WPFClient\bin\Debug\Newtonsoft.Json.dll
+D:\wwwrootTest\HelpDesk365\WPFClient\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\wwwrootTest\HelpDesk365\WPFClient\bin\Debug\Newtonsoft.Json.xml
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\WPFClient.csprojResolveAssemblyReference.cache
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\MainWindow.baml
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\MainWindow.g.cs
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\App.g.cs
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\WPFClient_MarkupCompile.cache
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\WPFClient.g.resources
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\WPFClient.Properties.Resources.resources
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\WPFClient.csproj.GenerateResource.Cache
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\WPFClient.exe
+D:\wwwrootTest\HelpDesk365\WPFClient\obj\Debug\WPFClient.pdb

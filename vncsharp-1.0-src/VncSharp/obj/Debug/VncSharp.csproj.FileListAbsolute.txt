@@ -6,3 +6,11 @@ C:\Users\Administrator\Downloads\vncsharp-1.0-src\vncsharp-1.0-src\VncSharp\obj\
 C:\Users\Administrator\Downloads\vncsharp-1.0-src\vncsharp-1.0-src\VncSharp\obj\Debug\VncSharp.csproj.GenerateResource.Cache
 C:\Users\Administrator\Downloads\vncsharp-1.0-src\vncsharp-1.0-src\VncSharp\obj\Debug\VncSharp.dll
 C:\Users\Administrator\Downloads\vncsharp-1.0-src\vncsharp-1.0-src\VncSharp\obj\Debug\VncSharp.pdb
+D:\wwwrootTest\HelpDesk365\vncsharp-1.0-src\VncSharp\bin\Debug\VncSharp.dll
+D:\wwwrootTest\HelpDesk365\vncsharp-1.0-src\VncSharp\bin\Debug\VncSharp.pdb
+D:\wwwrootTest\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Debug\VncSharp.csprojResolveAssemblyReference.cache
+D:\wwwrootTest\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Debug\VncSharp.PasswordDialog.resources
+D:\wwwrootTest\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Debug\VncSharp.RemoteDesktop.resources
+D:\wwwrootTest\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Debug\VncSharp.csproj.GenerateResource.Cache
+D:\wwwrootTest\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Debug\VncSharp.dll
+D:\wwwrootTest\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Debug\VncSharp.pdb

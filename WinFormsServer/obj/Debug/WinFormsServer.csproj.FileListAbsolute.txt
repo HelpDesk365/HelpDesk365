@@ -79,6 +79,35 @@ E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.Prope
 E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.WinFormsServer.resources
 E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Debug\WinFormsServer.csproj.GenerateResource.Cache
 E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Debug\WinFormsServer.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\SignalRChat.exe.config
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\SignalRChat.exe
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\SignalRChat.pdb
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Cors.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Diagnostics.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Hosting.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Security.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Newtonsoft.Json.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Owin.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\System.Web.Cors.dll
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.xml
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Cors.xml
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Diagnostics.xml
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Hosting.xml
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Security.xml
+D:\wwwrootTest\HelpDesk365\WinFormsServer\bin\Debug\Newtonsoft.Json.xml
+D:\wwwrootTest\HelpDesk365\WinFormsServer\obj\Debug\WinFormsServer.csprojResolveAssemblyReference.cache
+D:\wwwrootTest\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.Properties.Resources.resources
+D:\wwwrootTest\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.WinFormsServer.resources
+D:\wwwrootTest\HelpDesk365\WinFormsServer\obj\Debug\WinFormsServer.csproj.GenerateResource.Cache
+D:\wwwrootTest\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.exe
+D:\wwwrootTest\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.pdb
+=======
 E:\HelpDesk365\WinFormsServer\bin\Debug\SignalRChat.exe.config
 E:\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.exe
 E:\HelpDesk365\WinFormsServer\obj\Debug\SignalRChat.pdb
@@ -106,3 +135,4 @@ E:\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
 E:\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Hosting.xml
 E:\HelpDesk365\WinFormsServer\bin\Debug\Microsoft.Owin.Security.xml
 E:\HelpDesk365\WinFormsServer\bin\Debug\Newtonsoft.Json.xml
+>>>>>>> origin/master

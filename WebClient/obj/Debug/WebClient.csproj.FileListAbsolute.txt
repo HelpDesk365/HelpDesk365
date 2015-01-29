@@ -13,9 +13,17 @@ E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\bin\WebClient.pdb
 E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\obj\Debug\WebClient.csprojResolveAssemblyReference.cache
 E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\obj\Debug\WebClient.dll
 E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\obj\Debug\WebClient.pdb
+<<<<<<< HEAD
+D:\wwwrootTest\HelpDesk365\WebClient\bin\WebClient.dll
+D:\wwwrootTest\HelpDesk365\WebClient\bin\WebClient.pdb
+D:\wwwrootTest\HelpDesk365\WebClient\obj\Debug\WebClient.csprojResolveAssemblyReference.cache
+D:\wwwrootTest\HelpDesk365\WebClient\obj\Debug\WebClient.dll
+D:\wwwrootTest\HelpDesk365\WebClient\obj\Debug\WebClient.pdb
+=======
 E:\HelpDesk365\WebClient\bin\WebClient.dll.config
 E:\HelpDesk365\WebClient\bin\WebClient.dll
 E:\HelpDesk365\WebClient\bin\WebClient.pdb
 E:\HelpDesk365\WebClient\obj\Debug\WebClient.csprojResolveAssemblyReference.cache
 E:\HelpDesk365\WebClient\obj\Debug\WebClient.dll
 E:\HelpDesk365\WebClient\obj\Debug\WebClient.pdb
+>>>>>>> origin/master
