@@ -80,6 +80,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hubs\Agent.cs" />
+    <Compile Include="Hubs\ChatHub.cs" />
     <Compile Include="WinFormsServer.cs">
       <SubType>Form</SubType>
     </Compile>
