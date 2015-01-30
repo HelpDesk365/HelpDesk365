@@ -1,0 +1,8 @@
+E:\OpenSource\HelpDesk365\HelpDesk365\vncsharp-1.0-src\VncSharp\bin\Release\VncSharp.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\vncsharp-1.0-src\VncSharp\bin\Release\VncSharp.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Release\VncSharp.csprojResolveAssemblyReference.cache
+E:\OpenSource\HelpDesk365\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Release\VncSharp.PasswordDialog.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Release\VncSharp.RemoteDesktop.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Release\VncSharp.csproj.GenerateResource.Cache
+E:\OpenSource\HelpDesk365\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Release\VncSharp.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\vncsharp-1.0-src\VncSharp\obj\Release\VncSharp.pdb

@@ -62,10 +62,14 @@
     <Content Include="Assets\js\common.js" />
     <Content Include="Assets\js\jquery-1.11.2.min.js" />
     <Content Include="Assets\js\jquery.signalR-2.1.2.min.js" />
+    <Content Include="Chat.aspx" />
+    <Content Include="chat.html" />
     <Content Include="Html\chat.html" />
     <Content Include="Html\login.html" />
     <Content Include="Html\room_list.html" />
+    <Content Include="login.html" />
     <Content Include="rooms.html" />
+    <Content Include="room_list.html" />
     <Content Include="Scripts\jquery-1.11.2.min.js" />
     <Content Include="Assets\fonts\fontawesome-webfont.eot" />
     <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
@@ -88,6 +92,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

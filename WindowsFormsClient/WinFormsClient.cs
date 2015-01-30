@@ -20,7 +20,7 @@ namespace WinFormsClient
         /// </summary>
         private String UserName { get; set; }
         private IHubProxy HubProxy { get; set; }
-        const string ServerURI = "http://localhost:8080/signalr";
+        const string ServerURI = "http://helpdesk.hunet.co.kr:8080/signalr";
         private HubConnection Connection { get; set; }
         
         internal WinFormsClient()
@@ -202,7 +202,7 @@ namespace WinFormsClient
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            HubProxy.Invoke("Send", UserName, TextBoxMessage.Text, UserName);
+            HubProxy.Invoke("DisconnectClient", UserName);
         }
     }
 }

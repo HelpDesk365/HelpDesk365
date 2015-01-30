@@ -34,6 +34,7 @@
             this.TextBoxMessage = new System.Windows.Forms.TextBox();
             this.RichTextBoxConsole = new System.Windows.Forms.RichTextBox();
             this.ChatPanel = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnSessionTranser = new System.Windows.Forms.Button();
             this.SignInPanel = new System.Windows.Forms.Panel();
@@ -42,7 +43,6 @@
             this.UserNameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.btnClose = new System.Windows.Forms.Button();
             this.ChatPanel.SuspendLayout();
             this.SignInPanel.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +89,16 @@
             this.ChatPanel.Size = new System.Drawing.Size(621, 474);
             this.ChatPanel.TabIndex = 4;
             this.ChatPanel.Visible = false;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(311, 37);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(87, 21);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Text = "CloseSession";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // comboBox1
             // 
@@ -165,17 +175,6 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Enabled = false;
-            this.btnClose.Location = new System.Drawing.Point(311, 37);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(87, 21);
-            this.btnClose.TabIndex = 6;
-            this.btnClose.Text = "CloseSession";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // WinFormsClient
             // 

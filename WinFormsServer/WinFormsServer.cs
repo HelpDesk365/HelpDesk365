@@ -300,6 +300,10 @@ namespace SignalRChat
         public void DisconnectClient(string groupName)
         {
             var group = groupList.FirstOrDefault(d=>d.Name == groupName);
+            foreach (var item in group.Clients)
+            {
+                Groups.Remove(item.ClientId, group.Name);
+            }
             Clients.Group(group.Name).addMessage(group.Clients.Select(c=>c.ClientName).FirstOrDefault(), "접속을 끊었습니다.");
         }
 

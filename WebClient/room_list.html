@@ -19,7 +19,7 @@
                 alert('대화명을 입력해 주세요.');
                 return;
             }
-            location.href = "chat.html?nickName=" + $('#nickName').val() + '&categoryCd=' + categoryCd+'&cid='+guid();
+            location.href = "Chat.aspx?nickName=" + $('#nickName').val() + '&categoryCd=' + categoryCd+'&cid='+guid();
         }
         var guid = (function () {
             function s4() {
