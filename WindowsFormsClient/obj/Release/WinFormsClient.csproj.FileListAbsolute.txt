@@ -5,9 +5,12 @@ E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Release\Microsoft.A
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Release\Newtonsoft.Json.dll
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Release\Microsoft.AspNet.SignalR.Client.xml
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\bin\Release\Newtonsoft.Json.xml
-E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.WinFormsClient.resources
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.Properties.Resources.resources
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.csproj.GenerateResource.Cache
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.exe
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.pdb
 E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.csprojResolveAssemblyReference.cache
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.Login.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.HelpDesk.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.UserInfoControl.resources
+E:\OpenSource\HelpDesk365\HelpDesk365\WindowsFormsClient\obj\Release\WinFormsClient.Chat.resources

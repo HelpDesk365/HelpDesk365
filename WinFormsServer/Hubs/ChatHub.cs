@@ -20,7 +20,7 @@ namespace SignalRChat.Hubs
             return base.OnConnected();
         }
        
-        public override Task OnDisconnected()
+        public override Task OnDisconnected(bool isStopCall)
         {
             var agent = agentList.FirstOrDefault(d => d.Groups.Count(o => o.GroupId == Context.ConnectionId) > 0);
             if (agent != null)
@@ -34,7 +34,7 @@ namespace SignalRChat.Hubs
             }
 
             Program.MainForm.WriteToConsole("Client disconnected: " + Context.ConnectionId);
-            return base.OnDisconnected();
+            return base.OnDisconnected(isStopCall);
         }        
 
        

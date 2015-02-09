@@ -12,25 +12,28 @@ namespace WinFormsClient
     /// to not block the UI thread, and send chat messages to all connected 
     /// clients whether they are hosted in WinForms, WPF, or a web application.
     /// </summary>
-    public partial class WinFormsClient : Form
+    public partial class Chat : BaseForm
     {
         /// <summary>
         /// This name is simply added to sent messages to identify the user; this 
         /// sample does not include authentication.
         /// </summary>
-        private String UserName { get; set; }
+        
         private IHubProxy HubProxy { get; set; }
         const string ServerURI = "http://helpdesk.hunet.co.kr:8080/signalr";
         private HubConnection Connection { get; set; }
-        
-        internal WinFormsClient()
+        public Client client;
+        internal Chat(Client client,AgentInfo agentInfo)
         {
+            this.client = client;
+            this.AgentInfo = agentInfo;
             InitializeComponent();
+            ConnectAsync();
         }
 
         private void ButtonSend_Click(object sender, EventArgs e)
         {
-            HubProxy.Invoke("Send", UserName, TextBoxMessage.Text, UserName);
+            HubProxy.Invoke("Send", AgentInfo.UserName, TextBoxMessage.Text, client.Guid);
             TextBoxMessage.Text = String.Empty;
             TextBoxMessage.Focus();
         }
@@ -106,7 +109,7 @@ namespace WinFormsClient
             try
             {
                 await Connection.Start().ContinueWith(d => {
-                    HubProxy.Invoke("CreateGroup", UserName, UserName,"");
+                    HubProxy.Invoke("CreateGroup", AgentInfo.UserName, client.Guid,"");
                 });
                 
             }
@@ -142,19 +145,7 @@ namespace WinFormsClient
             this.Invoke((Action)(() => ButtonSend.Enabled = false));
             this.Invoke((Action)(() => StatusText.Text = "You have been disconnected."));
             this.Invoke((Action)(() => SignInPanel.Visible = true));
-        }
-
-        private void SignInButton_Click(object sender, EventArgs e)
-        {
-            UserName = UserNameTextBox.Text;
-            //Connect to server (use async method to avoid blocking UI thread)
-            if (!String.IsNullOrEmpty(UserName))
-            {
-                StatusText.Visible = true;
-                StatusText.Text = "Connecting to server...";
-                ConnectAsync();
-            }
-        }
+        }       
 
         private void WinFormsClient_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -162,6 +153,11 @@ namespace WinFormsClient
             {
                 Connection.Stop();
                 Connection.Dispose();
+            }
+
+            if (source != null)
+            {
+                source.Dispose();
             }
         }
 
@@ -177,7 +173,7 @@ namespace WinFormsClient
             {
                 MessageBox.Show("상담사 아이디를 선택해 주세요.");
             }
-            HubProxy.Invoke("SessionTransfer", UserName, comboBox1.SelectedItem.ToString());
+            HubProxy.Invoke("SessionTransfer", AgentInfo.UserId, comboBox1.SelectedItem.ToString());
         }
 
         private void comboBox1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -202,7 +198,7 @@ namespace WinFormsClient
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            HubProxy.Invoke("DisconnectClient", UserName);
+            HubProxy.Invoke("DisconnectClient", client.Guid);
         }
     }
 }

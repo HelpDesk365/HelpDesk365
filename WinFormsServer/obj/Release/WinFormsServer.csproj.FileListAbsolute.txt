@@ -25,3 +25,8 @@ E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Release\SignalRChat.Win
 E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Release\WinFormsServer.csproj.GenerateResource.Cache
 E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Release\SignalRChat.exe
 E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\obj\Release\SignalRChat.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\bin\Release\Microsoft.AspNet.SignalR.Redis.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\bin\Release\StackExchange.Redis.StrongName.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\bin\Release\Microsoft.AspNet.SignalR.Redis.xml
+E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\bin\Release\StackExchange.Redis.StrongName.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WinFormsServer\bin\Release\StackExchange.Redis.StrongName.xml

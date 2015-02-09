@@ -13,7 +13,7 @@ namespace WinFormsClient
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WinFormsClient());
+            Application.Run(new Login());
         }
     }
 }

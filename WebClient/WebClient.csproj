@@ -39,6 +39,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -64,6 +67,7 @@
     <Content Include="Assets\js\jquery.signalR-2.1.2.min.js" />
     <Content Include="Chat.aspx" />
     <Content Include="chat.html" />
+    <Content Include="CheckUserInfo.aspx" />
     <Content Include="Html\chat.html" />
     <Content Include="Html\login.html" />
     <Content Include="Html\room_list.html" />
@@ -98,6 +102,13 @@
     </Compile>
     <Compile Include="Chat.aspx.designer.cs">
       <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckUserInfo.aspx.cs">
+      <DependentUpon>CheckUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckUserInfo.aspx.designer.cs">
+      <DependentUpon>CheckUserInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

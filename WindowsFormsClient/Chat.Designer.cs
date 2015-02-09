@@ -1,6 +1,6 @@
 ﻿namespace WinFormsClient
 {
-    partial class WinFormsClient
+    partial class Chat
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinFormsClient));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chat));
             this.ButtonSend = new System.Windows.Forms.Button();
             this.TextBoxMessage = new System.Windows.Forms.TextBox();
             this.RichTextBoxConsole = new System.Windows.Forms.RichTextBox();
@@ -121,18 +121,7 @@
             this.btnSessionTranser.Text = "Session Transfer";
             this.btnSessionTranser.UseVisualStyleBackColor = true;
             this.btnSessionTranser.Click += new System.EventHandler(this.btnSessionTransfer_Click);
-            // 
-            // SignInPanel
-            // 
-            this.SignInPanel.Controls.Add(this.StatusText);
-            this.SignInPanel.Controls.Add(this.SignInButton);
-            this.SignInPanel.Controls.Add(this.UserNameTextBox);
-            this.SignInPanel.Controls.Add(this.label1);
-            this.SignInPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SignInPanel.Location = new System.Drawing.Point(0, 0);
-            this.SignInPanel.Name = "SignInPanel";
-            this.SignInPanel.Size = new System.Drawing.Size(621, 474);
-            this.SignInPanel.TabIndex = 4;
+           
             // 
             // StatusText
             // 
@@ -142,32 +131,7 @@
             this.StatusText.TabIndex = 6;
             this.StatusText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.StatusText.Visible = false;
-            // 
-            // SignInButton
-            // 
-            this.SignInButton.Location = new System.Drawing.Point(483, 20);
-            this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(87, 21);
-            this.SignInButton.TabIndex = 5;
-            this.SignInButton.Text = "Sign In";
-            this.SignInButton.UseVisualStyleBackColor = true;
-            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
-            // 
-            // UserNameTextBox
-            // 
-            this.UserNameTextBox.Location = new System.Drawing.Point(8, 22);
-            this.UserNameTextBox.Name = "UserNameTextBox";
-            this.UserNameTextBox.Size = new System.Drawing.Size(467, 21);
-            this.UserNameTextBox.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 12);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Enter user name:";
+          
             // 
             // notifyIcon1
             // 

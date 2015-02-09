@@ -3,3 +3,5 @@ E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\bin\WebClient.pdb
 E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\obj\Release\WebClient.csprojResolveAssemblyReference.cache
 E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\obj\Release\WebClient.dll
 E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\obj\Release\WebClient.pdb
+E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\bin\Newtonsoft.Json.dll
+E:\OpenSource\HelpDesk365\HelpDesk365\WebClient\bin\Newtonsoft.Json.xml
